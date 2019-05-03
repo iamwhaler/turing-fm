@@ -5,6 +5,12 @@
   height: 100vh;
 }
 
+.orchestrator {
+  padding-top: 80px;
+  width: 420px;
+  margin: 0 auto;
+}
+
 .paths {
   background-color: lightsteelblue;
   border-radius: 3px;
@@ -12,11 +18,26 @@
   margin: 0 auto;
 }
 
-.btn {
+.current-note {
+  opacity: 1;
+  background-color: lightblue;
+  transition: opacity 0.5s ease-in;
+}
+
+.btn-sequence {
+  color: white;
+  cursor: pointer;
+  background-color: teal;
   margin: 4px;
   border-radius: 4px;
   width: 140px;
   height: 40px;
+  opacity:0.8;
+}
+
+.btn-sequence:hover {
+  transition: opacity 0.5s ease-in;
+  opacity: 1;
 }
 
 .App-logo {
@@ -36,4 +57,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.flex-element {
+  display: flex;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: row;
 }

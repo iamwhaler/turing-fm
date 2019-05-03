@@ -8,6 +8,7 @@ export class Orchestrator extends React.Component {
     super(props);
     this.state = {
       sequence: [],
+      text_sequence: "",
       number_of_note: 0,
       current_note: ""
     };
@@ -23,7 +24,9 @@ export class Orchestrator extends React.Component {
     let Dsharp = _.filter(notes, note => note.note === "D#");
     let Fsharp = _.filter(notes, note => note.note === "F#");
 
-    return _.shuffle([_.sample(Fsharp).file , _.sample(C).file, _.sample(A).file, _.sample(Dsharp).file, ]);
+    let beat = _.shuffle([_.sample(Fsharp), _.sample(C), _.sample(A), _.sample(Dsharp),]);
+
+    return beat;
   }
 
   makeSequence() {
@@ -33,35 +36,31 @@ export class Orchestrator extends React.Component {
 
   nextParticle() {
     this.setState({number_of_note: this.state.number_of_note + 1});
-    if (this.state.number_of_note === 16) {
+    if (this.state.number_of_note === 15) {
       this.makeSequence();
       this.setState({number_of_note: 0});
     }
   }
 
   render() {
+    let sequence = this.state.sequence;
+    let { timeout, rate } = this.props;
     return (
         <div className="orchestrator">
           <Sound
-              url={this.state.sequence[this.state.number_of_note]}
-              playbackRate={0.9}
-              volume={1}
+              url={sequence[this.state.number_of_note].file}
+              playbackRate={rate ? rate : 0.9}
+              volume={2}
               playStatus={Sound.status.PLAYING}
               onFinishedPlaying={() => {
-                this.nextParticle();
-              }}
-          />
-          <Sound
-              url={this.state.sequence[this.state.number_of_note]}
-              playbackRate={0.45}
-              volume={1}
-              playStatus={Sound.status.PLAYING}
-              onFinishedPlaying={() => {
-                this.nextParticle();
+                setTimeout(this.nextParticle(), timeout);
               }}
           />
           <div className="paths">
-          {_.map(this.state.sequence, item => {return <div>{item}</div>})}
+            {_.map(sequence, (item, key) => {
+              return <div key={key}
+                  className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}</div>
+            })}
           </div>
           <button className="btn btn-sequence" onClick={() => this.makeSequence()}>Generate a sequence</button>
         </div>
