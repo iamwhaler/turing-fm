@@ -5,10 +5,10 @@ import { Orchestrator } from "./components/Orchestrator"
 function App() {
   return (
     <div className="App">
-      <code className="flex-container-row">
+      <div className="flex-container-row">
       <Orchestrator />
-      <Orchestrator timeout={2} rate={0.5}/>
-      </code>
+      <Orchestrator timeout={200} rate={0.5}/>
+      </div>
     </div>
   );
 }

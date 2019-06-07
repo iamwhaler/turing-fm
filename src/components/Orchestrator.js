@@ -1,7 +1,11 @@
 import React from 'react';
-import notes from "../knowledge/piano_notes"
+import notes, { airport, airport_progression } from "../knowledge/piano_notes"
 import _ from "lodash";
 import Sound from "react-sound";
+
+
+const NOTE_BANK = ["A", "C", "D#", "F#"];
+
 
 export class Orchestrator extends React.Component {
   constructor(props) {
@@ -19,19 +23,19 @@ export class Orchestrator extends React.Component {
   }
 
   makeBeat() {
-    let A = _.filter(notes, note => note.note === "A");
-    let C = _.filter(notes, note => note.note === "C");
-    let Dsharp = _.filter(notes, note => note.note === "D#");
-    let Fsharp = _.filter(notes, note => note.note === "F#");
+    let octave = _.sample([4, 5, 6]);
 
-    let beat = _.shuffle([_.sample(Fsharp), _.sample(C), _.sample(A), _.sample(Dsharp),]);
+    let nextBeat = [];
+    _.each(airport_progression, item => {
+      nextBeat.push(_.sample(_.filter(airport, particle => particle.note  ===  item)));
+    });
 
-    return beat;
+    console.log(nextBeat);
+    return _.shuffle(nextBeat);
   }
 
   makeSequence() {
     this.setState({sequence: [...this.makeBeat(), ...this.makeBeat(), ...this.makeBeat(), ...this.makeBeat()]});
-    console.log(this.state.sequence);
   }
 
   nextParticle() {
@@ -42,9 +46,13 @@ export class Orchestrator extends React.Component {
     }
   }
 
+  getNextNote(prev_note) {
+
+  }
+
   render() {
     let sequence = this.state.sequence;
-    let { timeout, rate } = this.props;
+    let {timeout, rate} = this.props;
     return (
         <div className="orchestrator">
           <Sound
@@ -59,7 +67,7 @@ export class Orchestrator extends React.Component {
           <div className="paths">
             {_.map(sequence, (item, key) => {
               return <div key={key}
-                  className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}</div>
+                          className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}</div>
             })}
           </div>
           <button className="btn btn-sequence" onClick={() => this.makeSequence()}>Generate a sequence</button>

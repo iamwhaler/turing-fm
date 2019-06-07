@@ -36,7 +36,7 @@
 }
 
 .btn-sequence:hover {
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.3s ease-in-out;
   opacity: 1;
 }
 
