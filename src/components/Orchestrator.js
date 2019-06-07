@@ -70,6 +70,7 @@ export class Orchestrator extends React.Component {
     let sequence = this.state.sequence;
     return (
         <div className="orchestrator" id="orchestrator-wrapper">
+          <button className="btn btn-sequence" onClick={() => this.makeSequence()}>Generate a sequence</button>
           <div className="paths">
             {_.map(sequence, (item, key) => {
               return <div key={key}
@@ -77,7 +78,7 @@ export class Orchestrator extends React.Component {
                     {console.log(key)}
                 <Sound
                     url={item.file}
-                    playbackRate={this.state.y - this.state.x + 1}
+                    playbackRate={1 + ((this.state.y - this.state.x + 1)*0.001)}
                     volume={25}
                     playStatus={Sound.status.PLAYING}
                     onFinishedPlaying={() => this.nextParticle(key)}
@@ -94,7 +95,6 @@ export class Orchestrator extends React.Component {
                 />
             })}
           </div>
-          <button className="btn btn-sequence" onClick={() => this.makeSequence()}>Generate a sequence</button>
         </div>
     )
 
