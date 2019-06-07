@@ -21,7 +21,6 @@ export class Orchestrator extends React.Component {
 
   componentWillMount() {
     this.makeSequence();
-    //setInterval(this.createParticle(), 200)
   }
 
   makeBeat() {
@@ -41,8 +40,7 @@ export class Orchestrator extends React.Component {
   }
 
   nextParticle(timeout) {
-    //this.createParticle();
-    setTimeout(this.setState({number_of_note: this.state.number_of_note + 1}), timeout);
+    setTimeout(this.setState({number_of_note: this.state.number_of_note + 1}), 10/timeout);
     if (this.state.number_of_note === 20) {
       this.makeSequence();
       this.setState({number_of_note: 0});

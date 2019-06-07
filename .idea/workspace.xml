@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26e7dcf-c16c-4441-b5ef-1296d75109f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Orchestrator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Orchestrator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/piano_notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/piano_notes.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +31,7 @@
       <file leaf-file-name="piano_notes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/knowledge/piano_notes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="303">
               <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -46,8 +44,8 @@
       <file leaf-file-name="Orchestrator.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Orchestrator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+            <state relative-caret-position="302">
+              <caret line="42" column="81" selection-start-line="42" selection-start-column="81" selection-end-line="42" selection-end-column="81" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -217,12 +215,12 @@
       <workItem from="1556863673132" duration="5095000" />
       <workItem from="1557145253420" duration="1506000" />
       <workItem from="1557736063362" duration="11963000" />
-      <workItem from="1559743974014" duration="10298000" />
+      <workItem from="1559743974014" duration="10504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34741000" />
+    <option name="totallyTimeSpent" value="34947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -588,7 +586,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/knowledge/piano_notes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="303">
           <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -599,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Orchestrator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        <state relative-caret-position="302">
+          <caret line="42" column="81" selection-start-line="42" selection-start-column="81" selection-end-line="42" selection-end-column="81" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
