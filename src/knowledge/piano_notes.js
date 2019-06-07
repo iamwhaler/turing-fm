@@ -64,6 +64,6 @@ export const airport = [
   {note: 'F', octave: 6, file: f6}
 ];
 
-export const airport_progressions = [["Ab", "C", "Db", "Eb", "F"], ["Ab", "Db", "Eb", "C", "Eb"], ["Ab", "Db", "Ab", "C", "F"]];
+export const airport_progressions = [["Ab", "C", "Db", "Eb", "F"], ["Ab", "Eb", "C", "Eb"], ["Ab", "C", "Db", "Ab", "C", "F", "Ab"]];
 
 export default notes;

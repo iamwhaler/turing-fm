@@ -26,16 +26,21 @@ export class Orchestrator extends React.Component {
     this.makeSequence();
 
     document.addEventListener("mousemove", e => {
-      this.setState({x: e.clientX});
-      this.setState({y: e.clientY});
-      //this.makeSequence();
+      this.setState(this.getMousePosition(e));
     });
 
     document.addEventListener("click", () => {
-      this.setState({single_notes: []});
-      this.setState({single_notes: [_.sample(airport)]});
+      this.setState({single_notes: [...this.state.single_notes, _.sample(airport)]});
     });
   }
+
+  getMousePosition(e) {
+    return {
+      x: e.clientX,
+      y: e.clientY
+    };
+  }
+
 
   makeBeat() {
     let octave = _.sample([4, 5, 6]);
@@ -54,7 +59,7 @@ export class Orchestrator extends React.Component {
   }
 
   nextParticle(timeout) {
-    setTimeout(this.setState({number_of_note: this.state.number_of_note + 1}), 10/timeout);
+    setTimeout(this.setState({number_of_note: this.state.number_of_note + 1}), _.random(2,6.5)/timeout);
     if (this.state.number_of_note === 20) {
       this.makeSequence();
       this.setState({number_of_note: 0});
@@ -85,7 +90,7 @@ export class Orchestrator extends React.Component {
                     playbackRate={1}
                     volume={50}
                     playStatus={Sound.status.PLAYING}
-                    onFinishedPlaying={() => {}}
+                    onFinishedPlaying={() => this.setState({single_notes: _.filter(this.state.single_notes, note => note.file !== item.file )})}
                 />
             })}
           </div>
