@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import notes, { airport, airport_progression } from "../knowledge/piano_notes"
+import notes, { airport, airport_progressions } from "../knowledge/piano_notes"
 import _ from "lodash";
 import Sound from "react-sound";
 
@@ -28,8 +28,9 @@ export class Orchestrator extends React.Component {
     let octave = _.sample([4, 5, 6]);
 
     let nextBeat = [];
-    _.each(airport_progression, item => {
-      nextBeat.push(_.sample(_.filter(airport, particle => particle.note  ===  item)));
+
+    _.each(_.sample(airport_progressions), item => {
+      nextBeat.push(_.sample(_.filter(airport, particle => particle.note  === item && particle.octave === octave )));
     });
 
     return _.shuffle(nextBeat);
@@ -39,10 +40,10 @@ export class Orchestrator extends React.Component {
     this.setState({sequence: [...this.makeBeat(), ...this.makeBeat(), ...this.makeBeat(), ...this.makeBeat()]});
   }
 
-  nextParticle() {
+  nextParticle(timeout) {
     //this.createParticle();
-    this.setState({number_of_note: this.state.number_of_note + 1});
-    if (this.state.number_of_note === 15) {
+    setTimeout(this.setState({number_of_note: this.state.number_of_note + 1}), timeout);
+    if (this.state.number_of_note === 20) {
       this.makeSequence();
       this.setState({number_of_note: 0});
     }
@@ -50,30 +51,19 @@ export class Orchestrator extends React.Component {
 
   render() {
     let sequence = this.state.sequence;
-    let {timeout, rate} = this.props;
     return (
         <div className="orchestrator" id="orchestrator-wrapper">
-          <Sound
-              url={sequence[this.state.number_of_note].file}
-              playbackRate={rate ? rate : 0.9}
-              volume={2}
-              playStatus={Sound.status.PLAYING}
-              onFinishedPlaying={() => {
-                setTimeout(this.nextParticle(), timeout);
-              }}
-          />
           <div className="paths">
             {_.map(sequence, (item, key) => {
               return <div key={key}
                           className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}
+                    {console.log(key)}
                 <Sound
                     url={item.file}
-                    playbackRate={this.props.rate ? this.props.rate : 0.9}
+                    playbackRate={1}
                     volume={25}
                     playStatus={Sound.status.PLAYING}
-                    onFinishedPlaying={() => {
-                      setTimeout(this.nextParticle(), this.props.timeout * 10000 * key);
-                    }}
+                    onFinishedPlaying={() => this.nextParticle(key)}
                 /></div>
             })}
           </div>
