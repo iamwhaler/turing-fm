@@ -5,6 +5,11 @@
   height: 100vh;
 }
 
+.instructions {
+  padding-top: 24px;
+  color: white;
+}
+
 .orchestrator {
   padding-top: 80px;
   width: 420px;

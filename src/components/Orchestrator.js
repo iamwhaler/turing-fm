@@ -13,14 +13,28 @@ export class Orchestrator extends React.Component {
     super(props);
     this.state = {
       sequence: [],
+      single_notes: [],
       text_sequence: "",
       number_of_note: 0,
-      current_note: ""
+      current_note: "",
+      x: 0,
+      y: 0
     };
   }
 
   componentWillMount() {
     this.makeSequence();
+
+    document.addEventListener("mousemove", e => {
+      this.setState({x: e.clientX});
+      this.setState({y: e.clientY});
+      //this.makeSequence();
+    });
+
+    document.addEventListener("click", () => {
+      this.setState({single_notes: []});
+      this.setState({single_notes: [_.sample(airport)]});
+    });
   }
 
   makeBeat() {
@@ -58,11 +72,21 @@ export class Orchestrator extends React.Component {
                     {console.log(key)}
                 <Sound
                     url={item.file}
-                    playbackRate={1}
+                    playbackRate={this.state.y - this.state.x + 1}
                     volume={25}
                     playStatus={Sound.status.PLAYING}
                     onFinishedPlaying={() => this.nextParticle(key)}
-                /></div>
+                />
+              </div>
+            })}
+            {_.map(this.state.single_notes, (item) => {
+              return <Sound
+                    url={item.file}
+                    playbackRate={1}
+                    volume={50}
+                    playStatus={Sound.status.PLAYING}
+                    onFinishedPlaying={() => {}}
+                />
             })}
           </div>
           <button className="btn btn-sequence" onClick={() => this.makeSequence()}>Generate a sequence</button>
