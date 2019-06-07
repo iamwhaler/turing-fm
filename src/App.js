@@ -6,8 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="flex-container-row">
-      <Orchestrator />
-      <Orchestrator timeout={200} rate={0.5}/>
+        <Orchestrator />
       </div>
     </div>
   );
