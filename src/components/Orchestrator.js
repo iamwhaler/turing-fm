@@ -69,10 +69,10 @@ export class Orchestrator extends React.Component {
                 <Sound
                     url={item.file}
                     playbackRate={this.props.rate ? this.props.rate : 0.9}
-                    volume={2}
+                    volume={25}
                     playStatus={Sound.status.PLAYING}
                     onFinishedPlaying={() => {
-                      setTimeout(this.nextParticle(), this.props.timeout * 1000 * key);
+                      setTimeout(this.nextParticle(), this.props.timeout * 10000 * key);
                     }}
                 /></div>
             })}
