@@ -17,6 +17,8 @@
 }
 
 .paths {
+  height: 360px;
+  overflow-y: scroll;
   background-color: lightsteelblue;
   border-radius: 3px;
   width: 70%;

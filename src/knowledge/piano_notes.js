@@ -66,4 +66,6 @@ export const airport = [
 
 export const airport_progressions = [["Ab", "C", "Db", "Eb", "F"], ["Ab", "Eb", "C", "Eb"], ["Ab", "C", "Db", "Ab", "C", "F", "Ab"]];
 
+export const rhytmic_patterns = [];
+
 export default notes;

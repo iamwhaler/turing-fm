@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import notes, { airport, airport_progressions } from "../knowledge/piano_notes"
+import notes, {airport, airport_progressions} from "../knowledge/piano_notes"
 import _ from "lodash";
 import Sound from "react-sound";
 
@@ -17,6 +17,7 @@ export class Orchestrator extends React.Component {
       text_sequence: "",
       number_of_note: 0,
       current_note: "",
+      path_seq: [],
       x: 0,
       y: 0
     };
@@ -26,7 +27,7 @@ export class Orchestrator extends React.Component {
     this.makeSequence();
 
     document.addEventListener("mousemove", e => {
-      this.setState(this.getMousePosition(e));
+      //this.setState(this.getMousePosition(e));
     });
 
     document.addEventListener("click", () => {
@@ -48,7 +49,7 @@ export class Orchestrator extends React.Component {
     let nextBeat = [];
 
     _.each(_.sample(airport_progressions), item => {
-      nextBeat.push(_.sample(_.filter(airport, particle => particle.note  === item && particle.octave === octave )));
+      nextBeat.push(_.sample(_.filter(airport, particle => particle.note === item && particle.octave === octave)));
     });
 
     return _.shuffle(nextBeat);
@@ -59,27 +60,44 @@ export class Orchestrator extends React.Component {
   }
 
   nextParticle(timeout) {
-    setTimeout(this.setState({number_of_note: this.state.number_of_note + 1}), _.random(2,6.5)/timeout);
+    setTimeout(this.setState({number_of_note: this.state.number_of_note + 1}), _.random(5, 10) / timeout);
     if (this.state.number_of_note === 20) {
       this.makeSequence();
       this.setState({number_of_note: 0});
     }
   }
 
+  createPath(item, key) {
+    this.state.path_seq.push(<div key={key}
+                 className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}
+          {console.log(key)}
+          <Sound
+              url={item.file}
+              playbackRate={1 + ((this.state.y - this.state.x + 1) * 0.001)}
+              volume={25}
+              playStatus={Sound.status.PLAYING}
+              onFinishedPlaying={() => this.nextParticle(key)}
+          />
+        </div>
+    )
+  }
+
   render() {
+    console.log(this.props.state);
     let sequence = this.state.sequence;
     return (
         <div className="orchestrator" id="orchestrator-wrapper">
           <button className="btn btn-sequence" onClick={() => this.makeSequence()}>Generate a sequence</button>
+          <button className="btn btn-sequence" onClick={() => _.times(10, this.createPath(_.sample(sequence)))}>Create path</button>
           <div className="paths">
             {_.map(sequence, (item, key) => {
               return <div key={key}
                           className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}
-                    {console.log(key)}
+                {console.log(key)}
                 <Sound
                     url={item.file}
-                    playbackRate={1 + ((this.state.y - this.state.x + 1)*0.001)}
-                    volume={25}
+                    playbackRate={1 + ((this.state.y - this.state.x + 1) * 0.001)}
+                    volume={10}
                     playStatus={Sound.status.PLAYING}
                     onFinishedPlaying={() => this.nextParticle(key)}
                 />
@@ -87,12 +105,16 @@ export class Orchestrator extends React.Component {
             })}
             {_.map(this.state.single_notes, (item) => {
               return <Sound
-                    url={item.file}
-                    playbackRate={1}
-                    volume={50}
-                    playStatus={Sound.status.PLAYING}
-                    onFinishedPlaying={() => this.setState({single_notes: _.filter(this.state.single_notes, note => note.file !== item.file )})}
-                />
+                  url={item.file}
+                  playbackRate={1}
+                  volume={10}
+                  playStatus={Sound.status.PLAYING}
+                  onFinishedPlaying={() => this.setState({single_notes: _.filter(this.state.single_notes, note => note.file !== item.file)})}
+              />
+            })}
+
+            {_.map(this.state.path_seq, item => {
+              return item;
             })}
           </div>
         </div>
