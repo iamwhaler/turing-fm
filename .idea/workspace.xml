@@ -2,15 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26e7dcf-c16c-4441-b5ef-1296d75109f9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/knowledge/Gin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/GinConsole.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/Helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/Lamp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/default_state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/knowledge/rules.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d#1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d#2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d#3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d#7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f#1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f#2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f#3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f#7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c8.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#7.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#2.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#3.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#4.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#5.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#6.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#7.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Orchestrator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Orchestrator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/knowledge/piano_notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/piano_notes.js" afterDir="false" />
     </list>
@@ -26,14 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="229">
+              <caret line="58" column="90" selection-start-line="58" selection-start-column="90" selection-end-line="58" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -42,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/src/knowledge/default_state.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -51,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/knowledge/rules.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -60,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/knowledge/Helpers.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -68,11 +118,10 @@
       <file leaf-file-name="piano_notes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/knowledge/piano_notes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+            <state relative-caret-position="477">
+              <caret line="101" column="35" selection-start-line="101" selection-start-column="35" selection-end-line="101" selection-end-column="35" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#414#461#0" expanded="true" />
+                <element signature="e#1#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,8 +130,8 @@
       <file leaf-file-name="Orchestrator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Orchestrator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+            <state relative-caret-position="829">
+              <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -90,15 +139,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inject.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inject.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="Gin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/knowledge/Gin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="510">
               <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -123,7 +167,6 @@
       <list>
         <option value="$PROJECT_DIR$/config-overrides.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/knowledge/piano_notes.js" />
         <option value="$PROJECT_DIR$/src/knowledge/Lamps.js" />
         <option value="$PROJECT_DIR$/src/knowledge/GinConsole.js" />
         <option value="$PROJECT_DIR$/src/knowledge/Helpers.js" />
@@ -132,9 +175,10 @@
         <option value="$PROJECT_DIR$/src/knowledge/default_state.js" />
         <option value="$PROJECT_DIR$/src/knowledge/rules.js" />
         <option value="$PROJECT_DIR$/src/knowledge/Gin.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Orchestrator.js" />
         <option value="$PROJECT_DIR$/inject.js" />
+        <option value="$PROJECT_DIR$/src/knowledge/piano_notes.js" />
+        <option value="$PROJECT_DIR$/src/components/Orchestrator.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -170,6 +214,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,13 +242,18 @@
               <item name="small-gm" type="b2602c69:ProjectViewProjectNode" />
               <item name="small-gm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="small-gm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="small-gm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="knowledge" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,15 +305,17 @@
       <workItem from="1556863673132" duration="5095000" />
       <workItem from="1557145253420" duration="1506000" />
       <workItem from="1557736063362" duration="11963000" />
-      <workItem from="1559743974014" duration="21273000" />
+      <workItem from="1559743974014" duration="27165000" />
+      <workItem from="1560114776962" duration="3278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45716000" />
+    <option name="totallyTimeSpent" value="54886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -273,7 +325,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.15882353" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.18529412" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -292,13 +344,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/Orchestrator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/knowledge/Gin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -307,20 +376,13 @@
         <state relative-caret-position="30">
           <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#414#461#0" expanded="true" />
+            <element signature="e#1#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -364,9 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -375,20 +434,13 @@
         <state relative-caret-position="30">
           <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#414#461#0" expanded="true" />
+            <element signature="e#1#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -425,9 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -436,20 +485,13 @@
         <state relative-caret-position="30">
           <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#414#461#0" expanded="true" />
+            <element signature="e#1#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -486,9 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -497,20 +536,13 @@
         <state relative-caret-position="165">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#414#461#0" expanded="true" />
+            <element signature="e#1#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -591,13 +623,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -636,7 +662,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/knowledge/Gin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="510">
           <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -647,57 +673,50 @@
     <entry file="file://$PROJECT_DIR$/src/knowledge/rules.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/knowledge/piano_notes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#414#461#0" expanded="true" />
-          </folding>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/knowledge/Helpers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/knowledge/default_state.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Orchestrator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+        <state relative-caret-position="829">
+          <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inject.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/knowledge/piano_notes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="101" column="35" selection-start-line="101" selection-start-column="35" selection-end-line="101" selection-end-column="35" />
+          <folding>
+            <element signature="e#1#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="58" column="90" selection-start-line="58" selection-start-column="90" selection-end-line="58" selection-end-column="90" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

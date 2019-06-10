@@ -5,9 +5,6 @@ import _ from "lodash";
 import Sound from "react-sound";
 
 
-const NOTE_BANK = ["A", "C", "D#", "F#"];
-
-
 export class Orchestrator extends React.Component {
   constructor(props) {
     super(props);
@@ -61,14 +58,14 @@ export class Orchestrator extends React.Component {
 
   nextParticle(timeout) {
     setTimeout(this.setState({number_of_note: this.state.number_of_note + 1}), _.random(5, 10) / timeout);
-    if (this.state.number_of_note === 20) {
+    if (this.state.number_of_note === this.state.sequence.length + this.state.path_seq.length) {
       this.makeSequence();
       this.setState({number_of_note: 0});
     }
   }
 
   createPath(item, key) {
-    this.state.path_seq.push(<div key={key}
+    this.state.path_seq.push(<div key={Math.random() + key}
                  className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}
           {console.log(key)}
           <Sound
@@ -103,8 +100,9 @@ export class Orchestrator extends React.Component {
                 />
               </div>
             })}
-            {_.map(this.state.single_notes, (item) => {
+            {_.map(this.state.single_notes, (item, key) => {
               return <Sound
+                  key={key}
                   url={item.file}
                   playbackRate={1}
                   volume={10}
