@@ -19,7 +19,8 @@ class App extends Component {
     this.gin.init();
     this.gin.registerRules(rules);
     this.state = {
-      fetched_sequence: []
+      fetched_sequence: [],
+      sequence: []
     };
 
     this.helpers = new Helpers(this.gin);
@@ -31,9 +32,7 @@ class App extends Component {
     //this.gin.connectReact(this);
 
     this.state.initDone = false;
-
     this.gin.params["helpers"] = this.helpers;
-
 
   }
 
@@ -45,36 +44,26 @@ class App extends Component {
       initDone: true
     });
 
-    this.requestSequence(this.state, "http://floating-tor-22631.herokuapp.com/sequence");
-    // if (!this.state.game_paused) this.gin.playGame();
-    //this.gin.playGame();
+    this.requestSequence(this.state, this.gin, "http://floating-tor-22631.herokuapp.com/sequence");
+    if (!this.state.game_paused) this.gin.playGame();
+    this.gin.playGame();
   }
 
 
-  requestSequence(state, url, callback) {
+  requestSequence(state, gin, url, callback) {
     var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XMLHttpRequest;
-
     var xhr = new XHR();
-
     xhr.open('GET', "https://cors-anywhere.herokuapp.com/" + url, true); // proxy chaining
-
     xhr.onload = function() {
-      state.fetched_sequence.push(JSON.parse(this.responseText));
+      gin.params.helpers.fetchSequence(JSON.parse(this.responseText), state);
     };
-
-    xhr.headers = {
-      'Accept': 'application/json',
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
-    };
-
     xhr.send();
   };
 
 
 
   render() {
-    setInterval(console.log(this.state), 1000);
+    setInterval(console.log(this.gin.state), 1000);
     return (
         <div className="App">
           <h3 className="instructions">Playback rate is controlled by the position of your cursor</h3>

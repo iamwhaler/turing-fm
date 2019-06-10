@@ -13,7 +13,6 @@ export const rules = {
 
       time.tick++;
       time.hour = date_config.hour;
-      store = params.helpers.setGameDate(store, game_date);
       return store;
     }
   }

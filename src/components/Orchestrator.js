@@ -45,10 +45,12 @@ export class Orchestrator extends React.Component {
 
     let nextBeat = [];
 
-    _.each(_.sample(airport_progressions), item => {
-      nextBeat.push(_.sample(_.filter(airport, particle => particle.note === item && particle.octave === octave)));
-    });
-
+    if (this.props.gin.store.sequence) {
+      _.map(this.props.gin.store.sequence, item => {
+        this.props.gin.params.helpers.fetchSequence(item);
+        nextBeat.push(_.sample(_.filter(notes, note => note.note === item)));
+      });
+    }
     return _.shuffle(nextBeat);
   }
 
@@ -80,7 +82,7 @@ export class Orchestrator extends React.Component {
   }
 
   render() {
-    console.log(this.props.state);
+    console.log(this.props.gin.store);
     let sequence = this.state.sequence;
     return (
         <div className="orchestrator" id="orchestrator-wrapper">
@@ -90,7 +92,6 @@ export class Orchestrator extends React.Component {
             {_.map(sequence, (item, key) => {
               return <div key={key}
                           className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}
-                {console.log(key)}
                 <Sound
                     url={item.file}
                     playbackRate={1 + ((this.state.y - this.state.x + 1) * 0.001)}
