@@ -2,147 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26e7dcf-c16c-4441-b5ef-1296d75109f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.A3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.A3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.A4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.A4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.A5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.A5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.A6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.A6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Ab3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Ab3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Ab4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Ab4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Ab5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Ab5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Ab6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Ab6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.B3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.B3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.B4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.B4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.B5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.B5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.B6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.B6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Bb3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Bb3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Bb4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Bb4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Bb5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Bb5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Bb6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Bb6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.C3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.C3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.C4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.C4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.C5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.C5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.C6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.C6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.D3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.D3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.D4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.D4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.D5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.D5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.D6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.D6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Db3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Db3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Db4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Db4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Db5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Db5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Db6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Db6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.E3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.E3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.E4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.E4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.E5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.E5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.E6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.E6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Eb3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Eb3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Eb5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Eb5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Eb6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Eb6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.F3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.F3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.F4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.F4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.F5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.F5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.F6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.F6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.G3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.G3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.G4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.G4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.G5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.G5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.G6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.G6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Gb3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Gb3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Gb4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Gb4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Gb5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Gb5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/Piano.pp.Gb6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/Piano.pp.Gb6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-Ab4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-Ab4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-Ab5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-Ab5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-Ab6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-Ab6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-C4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-C4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-C5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-C5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-C6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-C6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-Db4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-Db4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-Db5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-Db5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-Db6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-Db6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-Eb4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-Eb4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-Eb5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-Eb5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-Eb6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-Eb6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-F4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-F4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-F5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-F5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-F6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-F6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/airport/piano-F7.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/airport/piano-F7.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-a1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-a1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-a2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-a2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-a3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-a3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-a4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-a4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-a5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-a5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-a6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-a6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-a7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-a7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-c1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-c1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-c2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-c2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-c3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-c3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-c4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-c4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-c5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-c5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-c6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-c6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-c7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-c7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-c8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-c8.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-d#1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-d#1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-d#2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-d#2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-d#3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-d#3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-d#7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-d#7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-d4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-d4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-d5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-d5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-d6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-d6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-f#1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-f#1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-f#2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-f#2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-f#3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-f#3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-f#7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-f#7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-f4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-f4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-f5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-f5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-f-f6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-f-f6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-a1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-a1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-a2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-a2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-a3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-a3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-a4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-a4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-a5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-a5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-a6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-a6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-a7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-a7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-c1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-c1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-c2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-c2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-c3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-c3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-c4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-c4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-c5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-c5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-c6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-c6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-c7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-c7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-c8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-c8.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-d#1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-d#1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-d#2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-d#2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-d#3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-d#3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-d#4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-d#4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-d#5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-d#5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-d#6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-d#6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-d#7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-d#7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-f#1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-f#1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-f#2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-f#2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-f#3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-f#3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-f#4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-f#4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-f#5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-f#5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-f#6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-f#6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/audio/piano-p-f#7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano-p-f#7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/components/Orchestrator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Orchestrator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/knowledge/Gin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/Gin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/knowledge/GinConsole.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/GinConsole.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/knowledge/Helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/Helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/knowledge/Lamp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/Lamp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/knowledge/default_state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/default_state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/knowledge/piano_notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/piano_notes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/knowledge/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/rules.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-gm-frontend/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -156,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
             </state>
           </provider>
         </entry>
@@ -192,8 +61,8 @@
         <option value="$PROJECT_DIR$/inject.js" />
         <option value="$PROJECT_DIR$/src/knowledge/piano_notes.js" />
         <option value="$PROJECT_DIR$/src/components/Orchestrator.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -209,9 +78,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/small-gm-frontend/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -235,7 +107,7 @@
             <path>
               <item name="small-gm" type="b2602c69:ProjectViewProjectNode" />
               <item name="small-gm" type="462c0819:PsiDirectoryNode" />
-              <item name="small-gm-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,8 +135,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/small-gm-frontend" />
       <recent name="$PROJECT_DIR$/src/knowledge" />
     </key>
@@ -296,12 +168,12 @@
       <workItem from="1557145253420" duration="1506000" />
       <workItem from="1557736063362" duration="11963000" />
       <workItem from="1559743974014" duration="27165000" />
-      <workItem from="1560114776962" duration="4523000" />
+      <workItem from="1560114776962" duration="5392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56131000" />
+    <option name="totallyTimeSpent" value="57000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -681,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="58" column="90" selection-start-line="58" selection-start-column="90" selection-end-line="58" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -699,6 +564,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>

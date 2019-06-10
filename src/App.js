@@ -82,7 +82,6 @@ class App extends Component {
           <div className="flex-container-row" style={{position: "absolute", height: "100%"}}>
             <Orchestrator state={this.state} gin={this.gin} />
             <Orchestrator state={this.state} gin={this.gin} />
-            <button onClick={() => {    this.requestSequence('floating-tor-22631.herokuapp.com/sequence')}}>AAA</button>
           </div>
         </div>
     );
