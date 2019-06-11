@@ -58,13 +58,13 @@ intervals = {
     5: 2,  # seventh
 }
 
-Amajor = {'A': ['B', 'C#', 'D', 'E', 'F#', 'G#'],
-          'B': ['C#', 'D', 'E', 'F#', 'G#', 'A'],
-          'C#': ['D', 'E', 'F#', 'G#', 'A', 'B'],
-          'D': ['E', 'F#', 'G#', 'A', 'B', 'C#'],
-          'E': ['F#', 'G#', 'A', 'B', 'C#', 'D'],
-          'F#': ['G#', 'A', 'B', 'C#', 'D', 'E'],
-          'G#': ['A', 'B', 'C#', 'D', 'E', 'F#']}
+Amajor = {'A': ['B', 'Db', 'D', 'E', 'Gb', 'Ab'],
+          'B': ['Db', 'D', 'E', 'Gb', 'Ab', 'A'],
+          'C#': ['D', 'E', 'Gb', 'Ab', 'A', 'B'],
+          'D': ['E', 'Gb', 'Ab', 'A', 'B', 'Db'],
+          'E': ['Gb', 'Ab', 'A', 'B', 'Db', 'D'],
+          'F#': ['Ab', 'A', 'B', 'Db', 'D', 'E'],
+          'G#': ['A', 'B', 'Db', 'D', 'E', 'Gb']}
 
 
 # reset sequence start and end
