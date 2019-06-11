@@ -24,19 +24,15 @@ export class Orchestrator extends React.Component {
     this.makeSequence();
 
     document.addEventListener("mousemove", e => {
-      //this.setState(this.getMousePosition(e));
+      this.setState({
+        x: e.clientX,
+        y: e.clientY
+      });
     });
 
     document.addEventListener("click", () => {
       this.setState({single_notes: [...this.state.single_notes, _.sample(airport)]});
     });
-  }
-
-  getMousePosition(e) {
-    return {
-      x: e.clientX,
-      y: e.clientY
-    };
   }
 
 
