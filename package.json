@@ -10,6 +10,9 @@
     "react-scripts": "3.0.0",
     "react-sound": "^1.2.0"
   },
+  "engines": {
+    "node": "10.7.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-app-rewired build",
