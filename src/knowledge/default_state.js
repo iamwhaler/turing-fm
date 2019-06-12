@@ -7,16 +7,8 @@ export const default_state = {
   frame_rate: 1,
   game_speed_multiplier: 1,
   game_paused: true,
+  fetched_sequence: [],
   shortcuts_enabled: false,
-  date: {
-    tick: 0,
-    hour: 0,
-    day: 0,
-    week: 0,
-    month: 0,
-    year: 0,
-    is_working_time: false
-  },
   language: "en",
   soundEnable: true,
   volume: 100,

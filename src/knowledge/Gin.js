@@ -14,7 +14,8 @@ export class Gin {
       frame: 0,
       tick: 0,
       game_paused: true,
-      _id_counter: 0
+      _id_counter: 0,
+      fetched_sequence: []
     };
 
     this.stateGenerator = stateGenerator;
@@ -181,21 +182,16 @@ export class Gin {
 
   onInterval = () => {
     let store = this.store;
-    // console.log('onInterval 1', store);
 
     if (store.frame % store.frame_rate === 0) {
       store = this.onTick(store);
       store.tick++;
     }
 
-    // console.log('onInterval 2', store);
-
     store = this.onFrame(store);
     store.frame++;
-    //    localStorage.setItem(game_name+"_app_state", JSON.stringify(store));
     this.setState(store, 100);
-    // console.log("save_game");
-    this.saveGame(this.store);
+    //this.saveGame(this.store);
   };
 
   onFrame = store => {

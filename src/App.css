@@ -11,7 +11,6 @@
 }
 
 .orchestrator {
-  padding-top: 80px;
   width: 420px;
   margin: 0 auto;
 }
@@ -79,4 +78,9 @@
 .flex-container-column {
   display: flex;
   flex-direction: row;
+}
+
+.text-center {
+  color: white;
+  text-align: center;
 }

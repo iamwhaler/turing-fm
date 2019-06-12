@@ -1,18 +1,11 @@
+const _ENDPOINT_URL = "https://small-gm-api.herokuapp.com/sequence";
+
 export const rules = {
   tickRule: {
     onTick: (store, params) => {
-      const time = store.date;
-      const game_date = new Date(store.game_unixtime + time.tick * 60 * 60 * 1000);
-      const date_config = {
-        year: game_date.getFullYear(),
-        month: game_date.getMonth(),
-        date: game_date.getDate(),
-        day: game_date.getUTCDay(),
-        hour: game_date.getHours()
-      };
-
-      time.tick++;
-      time.hour = date_config.hour;
+      if (store.tick % 4 === 0) {
+        params.helpers.requestSequence(_ENDPOINT_URL, params.gin)
+      }
       return store;
     }
   }

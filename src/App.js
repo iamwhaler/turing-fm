@@ -10,14 +10,16 @@ import { rules } from "./knowledge/rules";
 import $ from "jquery";
 
 
-class App extends Component {
+const _ENDPOINT_URL = "https://small-gm-api.herokuapp.com/sequence";
 
+class App extends Component {
   constructor(props) {
     super(props);
 
     this.gin = new Gin("Generative", getDefaultState);
     this.gin.init();
     this.gin.registerRules(rules);
+    this.gin.newGame();
     this.state = {
       fetched_sequence: [],
       sequence: []
@@ -30,7 +32,7 @@ class App extends Component {
       this.setState(state);
     });
     //this.gin.connectReact(this);
-
+    this.gin.initLoop();
     this.state.initDone = false;
     this.gin.params["helpers"] = this.helpers;
 
@@ -40,37 +42,33 @@ class App extends Component {
     console.log("componentDidMount");
 
     this.gin.setState({
-      stage: "menu",
-      initDone: true
+      initDone: true,
+      fetched_sequence: []
     });
 
-    this.requestSequence(this.state, this.gin, "http://floating-tor-22631.herokuapp.com/sequence");
+    this.gin.params.helpers.requestSequence(_ENDPOINT_URL, this.gin);
+
     if (!this.state.game_paused) this.gin.playGame();
     this.gin.playGame();
   }
 
 
-  requestSequence(state, gin, url, callback) {
-    var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XMLHttpRequest;
-    var xhr = new XHR();
-    xhr.open('GET', "https://cors-anywhere.herokuapp.com/" + url, true); // proxy chaining
-    xhr.onload = function() {
-      gin.params.helpers.fetchSequence(JSON.parse(this.responseText), state);
-    };
-    xhr.send();
-  };
-
-
-
   render() {
-    setInterval(console.log(this.gin.state), 1000);
+    console.log(this.gin.store);
     return (
         <div className="App">
           <h3 className="instructions">Playback rate is controlled by the position of your cursor</h3>
           <h3 className="instructions">Each click generates sound</h3>
-          <div className="flex-container-row" style={{position: "absolute", height: "100%"}}>
-            <Orchestrator state={this.state} gin={this.gin} />
-            <Orchestrator state={this.state} gin={this.gin} />
+
+          <div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>
+            <div className="flex-container-column">
+              <h4 className="text-center">Algorithm 1</h4>
+              <Orchestrator fetched={false} state={this.state} gin={this.gin} />
+            </div>
+            <div className="flex-container-column">
+              <h4 className="text-center">Graph sequencing</h4>
+              <Orchestrator fetched={true} state={this.state} gin={this.gin} />
+            </div>
           </div>
         </div>
     );

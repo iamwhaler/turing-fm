@@ -24,14 +24,14 @@ export class Orchestrator extends React.Component {
     this.makeSequence();
 
     document.addEventListener("mousemove", e => {
-      this.setState({
-        x: e.clientX,
-        y: e.clientY
-      });
+      // this.setState({
+      //   x: e.clientX,
+      //   y: e.clientY
+      // });
     });
 
     document.addEventListener("click", () => {
-      this.setState({single_notes: [...this.state.single_notes, _.sample(airport)]});
+      this.setState({single_notes: [...this.state.single_notes, _.sample(this.props.gin.store.fetched_sequence)]});
     });
   }
 
@@ -78,13 +78,18 @@ export class Orchestrator extends React.Component {
   }
 
   render() {
-    console.log(this.props.gin.store);
     let sequence = this.state.sequence;
+    let gin = this.props.gin;
+    console.log(this.props.gin.store.fetched_sequence);
+    console.log(this.props.gin.store);
     return (
         <div className="orchestrator" id="orchestrator-wrapper">
-          <button className="btn btn-sequence" onClick={() => this.makeSequence()}>Generate a sequence</button>
-          <button className="btn btn-sequence" onClick={() => _.times(10, this.createPath(_.sample(sequence)))}>Create path</button>
+          <div className="">
+            <button className="btn btn-sequence" onClick={() => gin.params.helpers.requestSequence()}>Generate a sequence</button>
+            <button className="btn btn-sequence" onClick={() => _.times(10, this.createPath(_.sample(sequence)))}>Create path</button>
+          </div>
           <div className="paths">
+
             {_.map(sequence, (item, key) => {
               return <div key={key}
                           className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}
@@ -97,6 +102,7 @@ export class Orchestrator extends React.Component {
                 />
               </div>
             })}
+
             {_.map(this.state.single_notes, (item, key) => {
               return <Sound
                   key={key}
@@ -111,6 +117,21 @@ export class Orchestrator extends React.Component {
             {_.map(this.state.path_seq, item => {
               return item;
             })}
+
+            {this.props.gin.store.fetched_sequence ?
+                _.map(this.props.gin.store.fetched_sequence, (item, key) => {
+                  return <div key={key}
+                              className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}
+                    <Sound
+                        url={item.file}
+                        playbackRate={1 + ((this.state.y - this.state.x + 1) * 0.001)}
+                        volume={10}
+                        playStatus={Sound.status.PLAYING}
+                        onFinishedPlaying={() => this.nextParticle(key)}
+                    />
+                  </div>
+                })
+                : ""}
           </div>
         </div>
     )
