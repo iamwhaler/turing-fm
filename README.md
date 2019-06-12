@@ -1,4 +1,4 @@
-[http://small-gm.herokuapp.com]
+http://small-gm.herokuapp.com
 
 ## Available Scripts
 
