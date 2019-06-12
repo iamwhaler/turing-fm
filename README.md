@@ -1,3 +1,5 @@
+http://small-gm.herokuapp.com
+
 ## Available Scripts
 
 To start the app, run:
