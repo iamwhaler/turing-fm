@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26e7dcf-c16c-4441-b5ef-1296d75109f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Orchestrator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Orchestrator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/Gin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/Gin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/Helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/Helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/default_state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/default_state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/knowledge/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/rules.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -65,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default_state.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="default_state.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/knowledge/default_state.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -95,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rules.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rules.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/knowledge/rules.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -155,8 +148,8 @@
         <option value="$PROJECT_DIR$/src/knowledge/Helpers.js" />
         <option value="$PROJECT_DIR$/src/knowledge/Gin.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/knowledge/rules.js" />
         <option value="$PROJECT_DIR$/src/knowledge/default_state.js" />
+        <option value="$PROJECT_DIR$/src/knowledge/rules.js" />
       </list>
     </option>
   </component>
@@ -268,12 +261,12 @@
       <workItem from="1557145253420" duration="1506000" />
       <workItem from="1557736063362" duration="11963000" />
       <workItem from="1559743974014" duration="27165000" />
-      <workItem from="1560114776962" duration="28254000" />
+      <workItem from="1560114776962" duration="28708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79862000" />
+    <option name="totallyTimeSpent" value="80316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -658,13 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/knowledge/rules.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/knowledge/Gin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -679,6 +665,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/knowledge/rules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
