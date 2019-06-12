@@ -65,10 +65,6 @@ class App extends Component {
               <h4 className="text-center">Algorithm 1</h4>
               <Orchestrator fetched={false} state={this.state} gin={this.gin} />
             </div>
-            <div className="flex-container-column">
-              <h4 className="text-center">Graph sequencing</h4>
-              <Orchestrator fetched={true} state={this.state} gin={this.gin} />
-            </div>
           </div>
         </div>
     );

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26e7dcf-c16c-4441-b5ef-1296d75109f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/knowledge/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/rules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-457">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            <state relative-caret-position="277">
+              <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -88,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rules.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rules.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/knowledge/rules.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -147,9 +147,9 @@
         <option value="$PROJECT_DIR$/src/components/Orchestrator.js" />
         <option value="$PROJECT_DIR$/src/knowledge/Helpers.js" />
         <option value="$PROJECT_DIR$/src/knowledge/Gin.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/knowledge/default_state.js" />
         <option value="$PROJECT_DIR$/src/knowledge/rules.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -261,12 +261,12 @@
       <workItem from="1557145253420" duration="1506000" />
       <workItem from="1557736063362" duration="11963000" />
       <workItem from="1559743974014" duration="27165000" />
-      <workItem from="1560114776962" duration="28708000" />
+      <workItem from="1560114776962" duration="28936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80316000" />
+    <option name="totallyTimeSpent" value="80544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -641,16 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-457">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/knowledge/Gin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -672,6 +662,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
