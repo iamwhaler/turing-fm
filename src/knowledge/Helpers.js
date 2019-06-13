@@ -11,12 +11,14 @@ export default class Helpers {
     this.gin.setState(state, 0);
   }
 
-  requestSequence = (url, gin, callback) => {
+  requestSequence = (gin, callback) => {
     let XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XMLHttpRequest;
     let xhr = new XHR();
-    xhr.open('GET', "https://cors-anywhere.herokuapp.com/" + url, true); // proxy chaining
+    xhr.open('GET', "https://cors-anywhere.herokuapp.com/" + "https://small-gm-api.herokuapp.com/sequence", true); // proxy chaining
     xhr.onload = function() {
-      gin.setState({ fetched_sequence: [...gin.store.fetched_sequence, ...gin.params.helpers.fetchSequence(JSON.parse(this.responseText))]});
+      console.log(gin);
+      _.each(JSON.parse(this.responseText), item => gin.store.fetched_sequence.push(_.sample(_.filter(notes, note => note.note === item))));
+      //gin.setState({ fetched_sequence: [...gin.store.fetched_sequence, ...gin.params.helpers.fetchSequence(JSON.parse(this.responseText))]});
     };
     xhr.send();
   };

@@ -4,7 +4,7 @@ export const rules = {
   tickRule: {
     onTick: (store, params) => {
       if (store.tick % 10 === 0) {
-        params.helpers.requestSequence(_ENDPOINT_URL, params.gin)
+        params.helpers.requestSequence(params.gin)
       }
       return store;
     }

@@ -6,6 +6,7 @@ export const default_state = {
   game_speed: 900,
   frame_rate: 1,
   game_speed_multiplier: 1,
+  endpoint_url: "",
   game_paused: true,
   fetched_sequence: [],
   shortcuts_enabled: false,

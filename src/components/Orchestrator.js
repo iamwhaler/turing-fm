@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import notes, {airport, airport_progressions} from "../knowledge/piano_notes"
+import notes from "../knowledge/piano_notes"
 import _ from "lodash";
 import Sound from "react-sound";
 
@@ -33,6 +32,8 @@ export class Orchestrator extends React.Component {
     document.addEventListener("click", () => {
       this.setState({single_notes: [...this.state.single_notes, _.sample(this.props.gin.store.fetched_sequence)]});
     });
+
+    this.props.gin.params.helpers.requestSequence(this.props.gin);
   }
 
 
@@ -62,31 +63,13 @@ export class Orchestrator extends React.Component {
     }
   }
 
-  createPath(item, key) {
-    this.state.path_seq.push(<div key={Math.random() + key}
-                 className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}
-          {console.log(key)}
-          <Sound
-              url={item.file}
-              playbackRate={1 + ((this.state.y - this.state.x + 1) * 0.001)}
-              volume={25}
-              playStatus={Sound.status.PLAYING}
-              onFinishedPlaying={() => this.nextParticle(key)}
-          />
-        </div>
-    )
-  }
-
   render() {
     let sequence = this.state.sequence;
     let gin = this.props.gin;
-    console.log(this.props.gin.store.fetched_sequence);
-    console.log(this.props.gin.store);
     return (
         <div className="orchestrator" id="orchestrator-wrapper">
           <div className="">
-            <button className="btn btn-sequence" onClick={() => gin.params.helpers.requestSequence()}>Generate a sequence</button>
-            <button className="btn btn-sequence" onClick={() => _.times(10, this.createPath(_.sample(sequence)))}>Create path</button>
+            <button className="btn btn-sequence" onClick={() => gin.params.helpers.requestSequence(gin)}>Generate a sequence</button>
           </div>
           <div className="paths">
 
@@ -112,10 +95,6 @@ export class Orchestrator extends React.Component {
                   playStatus={Sound.status.PLAYING}
                   onFinishedPlaying={() => this.setState({single_notes: _.filter(this.state.single_notes, note => note.file !== item.file)})}
               />
-            })}
-
-            {_.map(this.state.path_seq, item => {
-              return item;
             })}
 
             {this.props.gin.store.fetched_sequence ?

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
 import { Orchestrator } from "./components/Orchestrator";
-import _ from "lodash";
 import { getDefaultState } from "./knowledge/default_state.js";
 
 import { Gin } from "./knowledge/Gin";
@@ -45,16 +44,12 @@ class App extends Component {
       initDone: true,
       fetched_sequence: []
     });
-
-    this.gin.params.helpers.requestSequence(_ENDPOINT_URL, this.gin);
-
     if (!this.state.game_paused) this.gin.playGame();
     this.gin.playGame();
   }
 
 
   render() {
-    console.log(this.gin.store);
     return (
         <div className="App">
           <h3 className="instructions">Playback rate is controlled by the position of your cursor</h3>
