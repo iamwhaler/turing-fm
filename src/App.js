@@ -9,7 +9,7 @@ import { rules } from "./knowledge/rules";
 import $ from "jquery";
 
 
-const _ENDPOINT_URL = "https://small-gm-api.herokuapp.com/sequence";
+const _ENDPOINT_URL = "https://turing-fm-api.herokuapp.com/sequence";
 
 class App extends Component {
   constructor(props) {
