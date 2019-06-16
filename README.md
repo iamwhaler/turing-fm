@@ -1,4 +1,4 @@
-http://small-gm.herokuapp.com
+http://turing-fm.herokuapp.com
 
 ## Available Scripts
 
