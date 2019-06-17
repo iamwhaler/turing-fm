@@ -1,5 +1,5 @@
 import React from 'react';
-import { notes } from "../knowledge/piano_notes"
+import {notes} from "../knowledge/piano_notes"
 import _ from "lodash";
 import Sound from "react-sound";
 
@@ -59,9 +59,8 @@ export class Orchestrator extends React.Component {
   nextParticle(timeout) {
 
     setTimeout(this.setState({number_of_note: this.state.number_of_note + 1}), _.random(5, 10) / timeout);
-    if (this.state.number_of_note === this.state.fetched_sequence.length) {
+    if (this.state.number_of_note >= this.props.gin.store.fetched_sequence.length) {
       this.makeSequence();
-      this.setState({number_of_note: 0});
     }
   }
 
@@ -71,7 +70,8 @@ export class Orchestrator extends React.Component {
     return (
         <div className="orchestrator" id="orchestrator-wrapper">
           <div className="">
-            <button className="btn btn-sequence" onClick={() =>this.setState({generated: true})}>Generate a sequence</button>
+            <button className="btn btn-sequence" onClick={() => this.props.gin.params.helpers.fetchSequence(this.props.gin.params.helpers.requestSequence(this.props.gin))}>Generate a sequence
+            </button>
           </div>
           <div className="paths">
 
@@ -86,7 +86,7 @@ export class Orchestrator extends React.Component {
               />
             })}
 
-            {this.props.gin.store.fetched_sequence.length > 0 ?
+            {gin.store.fetched_sequence.length > 0 ?
                 _.map(this.props.gin.store.fetched_sequence, (item, key) => {
                   return <div key={key}
                               className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}
@@ -102,7 +102,7 @@ export class Orchestrator extends React.Component {
                 : ""}
 
             {gin.store.rhythm.url ? gin.params.helpers.createOrchestrator(gin.store.rhythm)
-              : "" }
+                : ""}
           </div>
         </div>
     )
