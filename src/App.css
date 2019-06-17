@@ -1,3 +1,7 @@
+* {
+  margin: 0
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -9,9 +13,11 @@
   color: white;
 }
 
-.canvas {
+canvas {
   position: absolute;
-  z-index:1000;
+  z-index: 0;
+  top: 0;
+  left: 0;
 }
 
 .orchestrator {
@@ -32,6 +38,9 @@
   opacity: 1;
   background-color: lightblue;
   transition: opacity 0.5s ease-in;
+}
+.btn-container {
+  padding: 24px 0;
 }
 
 .btn-sequence {

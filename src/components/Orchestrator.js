@@ -69,7 +69,7 @@ export class Orchestrator extends React.Component {
     let gin = this.props.gin;
     return (
         <div className="orchestrator" id="orchestrator-wrapper">
-          <div className="">
+          <div className="btn-container">
             <button className="btn btn-sequence" onClick={() => this.props.gin.params.helpers.fetchSequence(this.props.gin.params.helpers.requestSequence(this.props.gin))}>Generate a sequence
             </button>
           </div>
