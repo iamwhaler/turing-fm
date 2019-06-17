@@ -3,7 +3,7 @@ import { notes } from "./piano_notes";
 import Sound from "react-sound";
 import React from "react"
 
-const _PROXY = "https://cors-anywhere.herokuapp.com/";
+const _PROXY = "https://cors.io/?";
 const _ENDPOINT = "https://turing-fm-api.herokuapp.com/sequence";
 
 export default class Helpers {

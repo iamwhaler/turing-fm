@@ -1,8 +1,7 @@
 .App {
   text-align: center;
   background-color: #282c34;
-  width: 100vw;
-  height: 100vh;
+  height: 100vh !important;
 }
 
 .instructions {
