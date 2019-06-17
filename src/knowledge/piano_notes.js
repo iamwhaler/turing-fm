@@ -60,7 +60,7 @@ import gb4 from "../audio/Piano.pp.Gb4.mp3";
 import gb5 from "../audio/Piano.pp.Gb5.mp3";
 import gb6 from "../audio/Piano.pp.Gb6.mp3";
 
-const notes = [
+export let notes = [
   {note: 'A', octave: 3, file: a3},
   {note: 'A', octave: 4, file: a4},
   {note: 'A', octave: 5, file: a5},
@@ -145,5 +145,3 @@ export const airport = [
 export const airport_progressions = [["Ab", "C", "Db", "Eb", "F"], ["Ab", "Eb", "C", "Eb"], ["Ab", "C", "Db", "Ab", "C", "F", "Ab"]];
 
 export const rhytmic_patterns = [];
-
-export default notes;

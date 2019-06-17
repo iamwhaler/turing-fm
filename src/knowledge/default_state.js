@@ -9,6 +9,8 @@ export const default_state = {
   endpoint_url: "",
   game_paused: true,
   fetched_sequence: [],
+  rhythm_sequence: {},
+  rhythm: {},
   shortcuts_enabled: false,
   language: "en",
   soundEnable: true,

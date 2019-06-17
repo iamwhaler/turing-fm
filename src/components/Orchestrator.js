@@ -1,5 +1,5 @@
 import React from 'react';
-import notes from "../knowledge/piano_notes"
+import { notes } from "../knowledge/piano_notes"
 import _ from "lodash";
 import Sound from "react-sound";
 
@@ -66,6 +66,7 @@ export class Orchestrator extends React.Component {
   render() {
     let sequence = this.state.sequence;
     let gin = this.props.gin;
+    {console.log(this.props.gin.store.rhythm)}
     return (
         <div className="orchestrator" id="orchestrator-wrapper">
           <div className="">
@@ -111,6 +112,9 @@ export class Orchestrator extends React.Component {
                   </div>
                 })
                 : ""}
+
+            {gin.store.rhythm ? gin.params.helpers.createOrchestrator(gin.store.rhythm)
+              : "" }
           </div>
         </div>
     )

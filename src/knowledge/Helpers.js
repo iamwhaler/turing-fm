@@ -1,6 +1,10 @@
 import _ from "lodash";
-import notes from "./piano_notes";
+import { notes } from "./piano_notes";
+import Sound from "react-sound";
+import React from "react"
 
+const _PROXY = "https://cors-anywhere.herokuapp.com/";
+const _ENDPOINT = "https://turing-fm-api.herokuapp.com/sequence";
 
 export default class Helpers {
   constructor(gin) {
@@ -9,12 +13,12 @@ export default class Helpers {
 
   brutalSet = state => {
     this.gin.setState(state, 0);
-  }
+  };
 
   requestSequence = (gin, callback) => {
     let XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XMLHttpRequest;
     let xhr = new XHR();
-    xhr.open('GET', "https://cors-anywhere.herokuapp.com/" + "https://small-gm-api.herokuapp.com/sequence", true); // proxy chaining
+    xhr.open('GET', _PROXY + _ENDPOINT, true); // proxy chaining
     xhr.onload = function() {
       console.log(gin);
       _.each(JSON.parse(this.responseText), item => gin.store.fetched_sequence.push(_.sample(_.filter(notes, note => note.note === item))));
@@ -28,5 +32,14 @@ export default class Helpers {
     _.each(seq, item => fetchedNotes.push(_.sample(_.filter(notes, note => note.note === item))));
     return fetchedNotes
     //console.log(fetchedNotes);
-  }
+  };
+
+  createOrchestrator(item) {
+    return <Sound
+        url={item.file}
+        playbackRate={1}
+        volume={5}
+        playStatus={Sound.status.PLAYING}
+    />
+  };
 }
