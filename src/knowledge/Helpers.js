@@ -23,6 +23,7 @@ export default class Helpers {
       console.log(gin);
       _.each(JSON.parse(this.responseText), item => gin.store.fetched_sequence.push(_.sample(_.filter(notes, note => note.note === item))));
       //gin.setState({ fetched_sequence: [...gin.store.fetched_sequence, ...gin.params.helpers.fetchSequence(JSON.parse(this.responseText))]});
+      if (callback) callback();
     };
     xhr.send();
   };

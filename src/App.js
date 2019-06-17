@@ -57,8 +57,7 @@ class App extends Component {
 
           <div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>
             <div className="flex-container-column">
-              <h4 className="text-center">Algorithm 1</h4>
-              <Orchestrator fetched={false} state={this.state} gin={this.gin} />
+              {this.gin.store.fetched_sequence.length > 0 ? <Orchestrator fetched={false} state={this.state} gin={this.gin} /> : ""}
             </div>
           </div>
         </div>
