@@ -9,6 +9,11 @@
   color: white;
 }
 
+.canvas {
+  position: absolute;
+  z-index:1000;
+}
+
 .orchestrator {
   width: 420px;
   margin: 0 auto;

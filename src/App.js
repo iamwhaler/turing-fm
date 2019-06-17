@@ -47,12 +47,14 @@ class App extends Component {
     if (!this.state.game_paused) this.gin.playGame();
     this.gin.playGame();
     this.helpers.requestSequence(this.gin);
+    this.helpers.drawCanvas();
   }
 
 
   render() {
     return (
         <div className="App">
+          <canvas className="canvas" width="1050" height="700"></canvas>
           <h3 className="instructions">Playback rate is controlled by the position of your cursor</h3>
           <h3 className="instructions">Each click generates sound (just wait for some notes to appear in the sequence table before clicking)</h3>
           <h3 className="instructions">The playback should start by itself in a couple seconds</h3>
