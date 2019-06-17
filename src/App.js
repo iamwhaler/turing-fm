@@ -46,6 +46,7 @@ class App extends Component {
     });
     if (!this.state.game_paused) this.gin.playGame();
     this.gin.playGame();
+    this.helpers.requestSequence(this.gin);
   }
 
 
@@ -57,7 +58,7 @@ class App extends Component {
 
           <div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>
             <div className="flex-container-column">
-              {this.gin.store.fetched_sequence.length > 0 ? <Orchestrator fetched={false} state={this.state} gin={this.gin} /> : ""}
+              {this.gin.store.fetched_sequence.length > 0  ? <Orchestrator fetched={false} state={this.state} gin={this.gin} /> : ""}
             </div>
           </div>
         </div>
