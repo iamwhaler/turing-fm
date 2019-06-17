@@ -54,8 +54,8 @@ class App extends Component {
     return (
         <div className="App">
           <h3 className="instructions">Playback rate is controlled by the position of your cursor</h3>
-          <h3 className="instructions">Each click generates sound</h3>
-
+          <h3 className="instructions">Each click generates sound (just wait for some notes to appear in the sequence table before clicking)</h3>
+          <h3 className="instructions">The playback should start by itself in a couple seconds</h3>
           <div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>
             <div className="flex-container-column">
               {this.gin.store.fetched_sequence.length > 0  ? <Orchestrator fetched={false} state={this.state} gin={this.gin} /> : ""}
