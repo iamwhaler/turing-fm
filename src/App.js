@@ -9,8 +9,6 @@ import { rules } from "./knowledge/rules";
 import $ from "jquery";
 
 
-const _ENDPOINT_URL = "https://turing-fm-api.herokuapp.com/sequence";
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -62,7 +60,7 @@ class App extends Component {
             <h3 className="instructions">The playback should start by itself in a couple seconds</h3>
             <div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>
               <div className="flex-container-column">
-                {this.gin.store.fetched_sequence.length > 0  ? <Orchestrator fetched={false} state={this.state} gin={this.gin} /> : ""}
+                {this.gin.store.fetched_sequence.length > 0  ? <Orchestrator fetched={false} state={this.state} gin={this.gin} /> : <div className="lds-dual-ring"></div>}
               </div>
             </div>
           </div>

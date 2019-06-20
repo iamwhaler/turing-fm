@@ -18,14 +18,42 @@ export default class Helpers {
   requestSequence = (gin, callback) => {
     let XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XMLHttpRequest;
     let xhr = new XHR();
-    xhr.open('GET', _PROXY + _ENDPOINT, true); // proxy chaining
+    xhr.open('GET', _PROXY + _ENDPOINT, true);
     xhr.onload = function() {
       console.log(gin);
-      _.each(JSON.parse(this.responseText), item => gin.store.fetched_sequence.push(_.sample(_.filter(notes, note => note.note === item))));
-      //gin.setState({ fetched_sequence: [...gin.store.fetched_sequence, ...gin.params.helpers.fetchSequence(JSON.parse(this.responseText))]});
+      _.each(JSON.parse(this.responseText), item =>   {
+        try {
+          gin.store.fetched_sequence.push(_.sample(_.filter(notes, note => note.note === item)));
+        }
+        catch (e) {
+          console.log(e)
+        }
+
+      });
       if (callback) callback();
     };
     xhr.send();
+  };
+
+  fetchFile = (file) => {
+    let result;
+    let audioContext = new AudioContext();
+
+    fetch(file)
+        .then(response => response.arrayBuffer())
+        .then(arrayBuffer => {
+          console.log('Received', arrayBuffer);
+          audioContext.decodeAudioData(arrayBuffer);
+          return arrayBuffer
+        })
+        .then(audioBuffer => {
+          let sourceNode = audioContext.createBufferSource();
+          sourceNode.buffer = audioBuffer;
+          sourceNode.connect(audioContext.destination);
+          sourceNode.start();
+        })
+        .catch(e => console.error(e));
+
   };
 
   fetchSequence = (seq) => {
@@ -35,7 +63,7 @@ export default class Helpers {
     //console.log(fetchedNotes);
   };
 
-  createOrchestrator(item) {
+  createOrchestrator = (item) => {
     return <Sound
         url={item.file}
         playbackRate={1}
