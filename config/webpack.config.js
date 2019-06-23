@@ -316,14 +316,6 @@ module.exports = function(webpackEnv) {
           ],
           include: paths.appSrc,
 
-          exclude: [
-            /\.html$/,
-            /\.(js|jsx)(\?.*)?$/,
-            /\.css$/,
-            /\.json$/,
-            /\.svg$/,
-            /\.mp3$/
-          ],
         },
         {
           // "oneOf" will traverse all following loaders until one will
