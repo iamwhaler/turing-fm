@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import { Orchestrator } from "./components/Orchestrator";
+import { Dropdown } from "./components/Dropdown";
 import { getDefaultState } from "./knowledge/default_state.js";
 
 import { Gin } from "./knowledge/Gin";
@@ -52,8 +53,9 @@ class App extends Component {
 
   render() {
     return (
+      
         <div className="App">
-          
+          {<Dropdown/>}
           <div className="app-content">
             <canvas className="canvas" width="1050" height="700"></canvas>
             <h3 className="instructions">Playback rate is controlled by the position of your cursor</h3>
