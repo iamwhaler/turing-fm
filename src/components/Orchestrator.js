@@ -2,6 +2,7 @@ import React from 'react';
 import {notes} from "../knowledge/piano_notes"
 import _ from "lodash";
 import Sound from "react-sound";
+import Slider from '@material-ui/lab/Slider';
 
 
 export class Orchestrator extends React.Component {
@@ -74,7 +75,6 @@ export class Orchestrator extends React.Component {
             </button>
           </div>
           <div className="paths">
-
             {_.map(this.state.single_notes, (item, key) => {
               return <Sound
                   key={key}
@@ -86,8 +86,7 @@ export class Orchestrator extends React.Component {
               />
             })}
 
-            {gin.store.fetched_sequence.length > 0 ?
-                _.map(this.props.gin.store.fetched_sequence, (item, key) => {
+            {_.map(this.props.gin.store.fetched_sequence, (item, key) => {
                   return <div key={key}
                               className={this.state.number_of_note === key ? "current-note" : ""}>{item.note + item.octave}
                     <Sound
@@ -98,8 +97,7 @@ export class Orchestrator extends React.Component {
                         onFinishedPlaying={() => this.nextParticle(key)}
                     />
                   </div>
-                })
-                : ""}
+                })}
 
             {gin.store.rhythm.url ? gin.params.helpers.createOrchestrator(gin.store.rhythm)
                 : ""}

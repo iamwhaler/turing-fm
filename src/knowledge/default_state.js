@@ -17,6 +17,7 @@ export const default_state = {
   volume: 100,
   orchestrator: {
     musicEnable: true,
+    playback_rate: 1,
     volume: 15,
     didMonthPassed: false,
     previousMonthMoney: 0,

@@ -7,6 +7,7 @@ import { Gin } from "./knowledge/Gin";
 import Helpers from "./knowledge/Helpers";
 import { rules } from "./knowledge/rules";
 import $ from "jquery";
+import {Controls} from "./components/Controls";
 
 
 class App extends Component {
@@ -58,6 +59,7 @@ class App extends Component {
             <h3 className="instructions">Playback rate is controlled by the position of your cursor</h3>
             <h3 className="instructions">Each click generates sound (just wait for some notes to appear in the sequence table before clicking)</h3>
             <h3 className="instructions">The playback should start by itself in a couple seconds</h3>
+            <Controls gin={this.gin} />
             <div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>
               <div className="flex-container-column">
                 {this.gin.store.fetched_sequence.length > 0  ? <Orchestrator fetched={false} state={this.state} gin={this.gin} /> : <div className="lds-dual-ring"></div>}

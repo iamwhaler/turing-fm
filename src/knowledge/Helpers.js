@@ -3,7 +3,6 @@ import { notes } from "./piano_notes";
 import Sound from "react-sound";
 import React from "react"
 import $ from "jquery";
-const _PROXY = "https://cors.io/?";
 const _ENDPOINT = "https://turing-fm-api.herokuapp.com/sequence";
 
 export default class Helpers {
@@ -18,7 +17,7 @@ export default class Helpers {
   requestSequence = (gin, callback) => {
     let XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XMLHttpRequest;
     let xhr = new XHR();
-    xhr.open('GET', _PROXY + _ENDPOINT, true);
+    xhr.open('GET', _ENDPOINT, true);
     xhr.onload = function() {
       console.log(gin);
       _.each(JSON.parse(this.responseText), item =>   {
@@ -54,6 +53,11 @@ export default class Helpers {
         })
         .catch(e => console.error(e));
 
+  };
+
+  changePlaybackRate = (state, value) => {
+    state.orchestrator.playback_rate = value;
+    this.gin.setState(state);
   };
 
   fetchSequence = (seq) => {
