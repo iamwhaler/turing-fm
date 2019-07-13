@@ -3,6 +3,7 @@ import { notes } from "./piano_notes";
 import Sound from "react-sound";
 import React from "react"
 import $ from "jquery";
+import {soundManager} from "soundmanager2";
 const _ENDPOINT = "https://turing-fm-api.herokuapp.com/sequence";
 
 export default class Helpers {
@@ -12,6 +13,37 @@ export default class Helpers {
 
   brutalSet = state => {
     this.gin.setState(state, 0);
+  };
+
+  createSound = path => {
+    soundManager.createSound({
+      url: path,
+      onfinish: function() {
+        soundManager._writeDebug(this.url + ' finished playing');
+      }
+    }).play();
+  };
+
+  createSoundById = id => {
+    soundManager.createSound({
+      id: id,
+      url: '../mpc/audio/CHINA_1.mp3',
+      onload: () => {
+
+      },
+      onfinish: () => {
+        soundManager._writeDebug(this.id + ' finished playing');
+        //soundManager.play(this.id + 1, {});
+      }
+    }).load();
+  };
+
+  getSoundById = id => {
+    soundManager.getSoundById(id);
+  };
+
+  playSoundById = id => {
+    soundManager.play(id, {});
   };
 
   requestSequence = (gin, callback) => {

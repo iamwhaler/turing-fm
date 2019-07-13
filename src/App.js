@@ -8,7 +8,8 @@ import { Gin } from "./knowledge/Gin";
 import Helpers from "./knowledge/Helpers";
 import { rules } from "./knowledge/rules";
 import $ from "jquery";
-import {Controls} from "./components/Controls";
+import CSlider from "./components/Controls";
+import { soundManager } from "soundmanager2";
 
 
 class App extends Component {
@@ -48,6 +49,22 @@ class App extends Component {
     this.gin.playGame();
     this.helpers.requestSequence(this.gin);
     this.helpers.drawCanvas();
+
+    soundManager.setup({
+      url: '/path/to/swf-directory/',
+      onready: function() {
+        console.log("SM2 has loaded");
+        soundManager.createSound({
+          url: '../mpc/audio/CHINA_1.mp3'
+        }).play();
+
+      },
+
+      ontimeout: function() {
+        console.log("Uh-oh. No HTML5 support, SWF missing, Flash blocked or other issue\n")
+      }
+
+    });
   }
 
 
@@ -61,7 +78,7 @@ class App extends Component {
             <h3 className="instructions">Playback rate is controlled by the position of your cursor</h3>
             <h3 className="instructions">Each click generates sound (just wait for some notes to appear in the sequence table before clicking)</h3>
             <h3 className="instructions">The playback should start by itself in a couple seconds</h3>
-            <Controls gin={this.gin} />
+            {/* <CSlider value={this.gin.store.orchestrator.playback_rate} onChange={e => this.helpers.changePlaybackRate(this.state, e)} gin={this.gin} /> */}
             <div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>
               <div className="flex-container-column">
                 {this.gin.store.fetched_sequence.length > 0  ? <Orchestrator fetched={false} state={this.state} gin={this.gin} /> : <div className="lds-dual-ring"></div>}

@@ -1,32 +1,16 @@
 import React from 'react';
-import Slider from '@material-ui/lab/Slider';
+//import Slider from 'react-input-slider';
 
-
-export class Controls extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      playback_rate: 1
-    }
-
-  }
-
-  componentWillMount() {
-  }
-
-  render() {
-    let gin = this.props.gin;
-    let helpers = gin.params.helpers;
-    return <div className="playback" id="playback">
-            <Slider
-                aria-label="playback"
-                onChange={(event, value) => helpers.changePlaybackRate(gin.store, value)}
-                onChangeCommitted={() => {}}
-                step={1}
-                min={0}
-                max={100}
-            />
-            </div>
-  }
-}
+const CSlider = props => {
+  const { value, onChange, gin } = props;
+  return (
+      <div className="slider">
+        {/*<Slider
+            axis="x"
+            x={value}
+            onChange={({ x }) => onChange(x)}
+        />*/}
+      </div>
+  );
+};
+export default CSlider;
