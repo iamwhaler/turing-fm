@@ -5,7 +5,7 @@ export const rules = {
     onTick: (store, params) => {
       if (store.tick % 10 === 0) {
         store.rhythm_sequence = _.sample(params.helpers.fetchSequence(params.helpers.requestSequence(params.gin)));
-        //store.rhythm = _.sample(store.fetched_sequence);
+        params.createSound(_.sample(store.fetched_sequence));
       }
       return store;
     }
