@@ -55,6 +55,9 @@ export default class Helpers {
       _.each(JSON.parse(this.responseText), item =>   {
         try {
           gin.store.fetched_sequence.push(_.sample(_.filter(notes, note => note.note === item)));
+          _.each(gin.store.fetched_sequence, (part, key) => {
+            gin.store.fetched_sequence[key].time = _.random(2, 4);
+          })
         }
         catch (e) {
           console.log(e)
