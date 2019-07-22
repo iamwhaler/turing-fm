@@ -1,5 +1,5 @@
 import React from 'react';
-import {notes} from "../knowledge/piano_notes"
+import {piano_notes} from "../knowledge/piano_notes";
 import _ from "lodash";
 import Sound from "react-sound";
 import Slider from '@material-ui/lab/Slider';
@@ -47,7 +47,7 @@ export class Orchestrator extends React.Component {
     if (this.props.gin.store.sequence) {
       _.map(this.props.gin.store.sequence, item => {
         this.props.gin.params.helpers.fetchSequence(item);
-        nextBeat.push(_.sample(_.filter(notes, note => note.note === item)));
+        nextBeat.push(_.sample(_.filter(piano_notes, note => note.note === item)));
       });
     }
     return _.shuffle(nextBeat);
