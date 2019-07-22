@@ -3,114 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d26e7dcf-c16c-4441-b5ef-1296d75109f9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.A3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.A3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.A4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.A4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.A5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.A5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.A6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.A6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Ab3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Ab3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Ab4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Ab4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Ab5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Ab5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Ab6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Ab6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.B3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.B3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.B4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.B4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.B5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.B5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.B6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.B6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Bb3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Bb3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Bb4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Bb4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Bb5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Bb5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Bb6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Bb6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.C3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.C3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.C4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.C4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.C5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.C5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.C6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.C6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.D3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.D3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.D4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.D4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.D5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.D5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.D6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.D6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Db3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Db3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Db4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Db4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Db5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Db5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Db6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Db6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.E3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.E3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.E4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.E4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.E5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.E5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.E6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.E6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Eb3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Eb3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Eb5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Eb5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Eb6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Eb6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.F3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.F3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.F4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.F4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.F5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.F5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.F6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.F6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.G3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.G3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.G4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.G4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.G5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.G5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.G6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.G6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Gb3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Gb3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Gb4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Gb4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Gb5.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Gb5.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/Piano.pp.Gb6.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/Piano.pp.Gb6.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-a1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-a2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-a3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-a4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-a5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-a6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-a7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-a7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-c1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-c2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-c3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-c4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-c5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-c6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-c7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-c8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-c8.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d#1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-d#1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d#2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-d#2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d#3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-d#3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d#7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-d#7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-d4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-d5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-d6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-d6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f#1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-f#1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f#2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-f#2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f#3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-f#3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f#7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-f#7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-f4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-f5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-f-f6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-f-f6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-a1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-a2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-a3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-a4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-a5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-a6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-a7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-a7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-c1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-c2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-c3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-c4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-c5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-c6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-c7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-c8.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-c8.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-d#1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-d#2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-d#3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-d#4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-d#5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-d#6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-d#7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-d#7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#1.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-f#1.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#2.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-f#2.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#3.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-f#3.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#4.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-f#4.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#5.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-f#5.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#6.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-f#6.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/audio/piano-p-f#7.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/audio/piano/piano-p-f#7.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Orchestrator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Orchestrator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/Helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/Helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/knowledge/piano_notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/piano_notes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/knowledge/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/knowledge/rules.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -128,8 +21,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="81" column="106" selection-start-line="81" selection-start-column="106" selection-end-line="81" selection-end-column="106" />
+            <state relative-caret-position="1155">
+              <caret line="77" column="69" selection-start-line="77" selection-start-column="69" selection-end-line="77" selection-end-column="69" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -137,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rules.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rules.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/knowledge/rules.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -158,14 +51,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="piano_notes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="piano_notes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/knowledge/piano_notes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-              <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+            <state relative-caret-position="900">
+              <caret line="60" column="50" lean-forward="true" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+              <folding>
+                <element signature="e#1#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -269,11 +162,11 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/Controls.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Orchestrator.js" />
-        <option value="$PROJECT_DIR$/src/knowledge/rules.js" />
         <option value="$PROJECT_DIR$/src/knowledge/Helpers.js" />
         <option value="$PROJECT_DIR$/src/knowledge/piano_notes.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/knowledge/rules.js" />
       </list>
     </option>
   </component>
@@ -408,12 +301,12 @@
       <workItem from="1560523272899" duration="3312000" />
       <workItem from="1560757976240" duration="27313000" />
       <workItem from="1561929622883" duration="9954000" />
-      <workItem from="1563785193666" duration="4436000" />
+      <workItem from="1563785193666" duration="4727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128680000" />
+    <option name="totallyTimeSpent" value="128971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -723,30 +616,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/knowledge/rules.js">
+    <entry file="file://$PROJECT_DIR$/src/knowledge/piano_notes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="900">
+          <caret line="60" column="50" lean-forward="true" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+          <folding>
+            <element signature="e#1#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="81" column="106" selection-start-line="81" selection-start-column="106" selection-end-line="81" selection-end-column="106" />
+        <state relative-caret-position="1155">
+          <caret line="77" column="69" selection-start-line="77" selection-start-column="69" selection-end-line="77" selection-end-column="69" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/knowledge/piano_notes.js">
+    <entry file="file://$PROJECT_DIR$/src/knowledge/rules.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>

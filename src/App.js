@@ -75,9 +75,8 @@ class App extends Component {
           {<Dropdown/>}
           <div className="app-content">
             <canvas className="canvas" width="1050" height="700"></canvas>
-            <h3 className="instructions">Playback rate is controlled by the position of your cursor</h3>
+            <h3 className="instructions">Click before it fetched</h3>
             <h3 className="instructions">Each click generates sound (just wait for some notes to appear in the sequence table before clicking)</h3>
-            <h3 className="instructions">The playback should start by itself in a couple seconds</h3>
             {/* <CSlider value={this.gin.store.orchestrator.playback_rate} onChange={e => this.helpers.changePlaybackRate(this.state, e)} gin={this.gin} /> */}
             <div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>
               <div className="flex-container-column">

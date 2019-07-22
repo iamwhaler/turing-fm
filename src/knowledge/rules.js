@@ -1,10 +1,9 @@
 import _ from "lodash";
 
 export const rules = {
-  tickRule: {
+  tick: {
     onTick: (store, params) => {
-      if (store.tick % 0.5 === 0) {
-        store.rhythm_sequence = _.sample(params.helpers.fetchSequence(params.helpers.requestSequence(params.gin)));
+      if (store.tick % 1 === 0) {
         params.helpers.createSound(_.sample(store.fetched_sequence).file);
       }
 
