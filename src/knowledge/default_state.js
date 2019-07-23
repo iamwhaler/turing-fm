@@ -16,6 +16,7 @@ export const default_state = {
   soundEnable: true,
   volume: 100,
   orchestrator: {
+    current_note: 0,
     musicEnable: true,
     playback_rate: 1,
     volume: 15,

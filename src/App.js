@@ -12,6 +12,7 @@ import CSlider from "./components/Controls";
 import { soundManager } from "soundmanager2";
 
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -39,13 +40,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log("componentDidMount");
-
     this.gin.setState({
       initDone: true,
       fetched_sequence: []
     });
-    if (!this.state.game_paused) this.gin.playGame();
     this.gin.playGame();
     this.helpers.requestSequence(this.gin);
     this.helpers.drawCanvas();
@@ -54,10 +52,6 @@ class App extends Component {
       url: '/path/to/swf-directory/',
       onready: function() {
         console.log("SM2 has loaded");
-        soundManager.createSound({
-          url: '../mpc/audio/CHINA_1.mp3'
-        }).play();
-
       },
 
       ontimeout: function() {

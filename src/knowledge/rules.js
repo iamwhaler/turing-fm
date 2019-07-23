@@ -3,15 +3,20 @@ import _ from "lodash";
 export const rules = {
   tick: {
     onTick: (store, params) => {
-      if (store.tick % 1 === 0) {
+      if (store.tick % 3 === 0) {
         params.helpers.createSound(_.sample(store.fetched_sequence).file);
       }
 
-      _.each(store.fetched_sequence, item => {
+      _.each(store.fetched_sequence, (item, key) => {
         if (item.time === store.tick) {
           params.helpers.createSound(item.file);
+          store.orchestrator.current_note = key;
         }
       });
+
+      if (store.orchestrator.current_note === store.fetched_sequence.length - 1) {
+        params.helpers.requestSequence(params.gin);
+      }
 
       return store;
     }

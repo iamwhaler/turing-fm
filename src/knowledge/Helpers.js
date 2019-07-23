@@ -55,7 +55,8 @@ export default class Helpers {
       _.each(JSON.parse(this.responseText), item =>   {
           gin.store.fetched_sequence.push(_.sample(_.filter(piano_notes, note => note.note === item)));
           _.each(gin.store.fetched_sequence, (part, key) => {
-            gin.store.fetched_sequence[key].time = _.random(2, 4);
+            let tick = gin.store.tick;
+            gin.store.fetched_sequence[key].time = _.random(tick, tick * 10); // tick is a reference thus dynamic, to fix
           })
       });
       if (callback) callback();
