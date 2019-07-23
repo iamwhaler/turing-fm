@@ -10,13 +10,12 @@ export const rules = {
       _.each(store.fetched_sequence, (item, key) => {
         if (item.time === store.tick) {
           params.helpers.createSound(item.file);
+          if (key === store.fetched_sequence.length - 1) {
+            params.helpers.requestSequence(params.gin);
+          }
           store.orchestrator.current_note = key;
         }
       });
-
-      if (store.orchestrator.current_note === store.fetched_sequence.length - 1) {
-        params.helpers.requestSequence(params.gin);
-      }
 
       return store;
     }

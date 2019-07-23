@@ -89,7 +89,14 @@ export class Orchestrator extends React.Component {
             {_.map(this.props.gin.store.fetched_sequence, (item, key) => {
                   return <div key={key}
                               className={gin.store.tick === item.time ? "current-note" : ""}>{item.note + item.octave + " " + " tick: " + item.time}
-                  </div>
+                    <Sound
+                        url={item.file}
+                        playbackRate={1 + ((this.state.y - this.state.x + 1) * 0.001)}
+                        volume={10}
+                        playStatus={Sound.status.PLAYING}
+                        onFinishedPlaying={() => this.nextParticle(key)}
+                    />
+                              </div>
                 })}
           </div>
         </div>
