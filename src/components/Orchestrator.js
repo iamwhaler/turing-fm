@@ -86,6 +86,7 @@ export class Orchestrator extends React.Component {
               />
             })}
 
+
             {_.map(this.props.gin.store.fetched_sequence, (item, key) => {
                   return <div key={key}
                               className={gin.store.tick === item.time ? "current-note" : ""}>{item.note + item.octave + " " + " tick: " + item.time}

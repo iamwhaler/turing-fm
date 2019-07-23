@@ -27,11 +27,17 @@ canvas {
 
 .paths {
   height: 360px;
-  overflow-y: scroll;
+  overflow: scroll;
   background-color: lightsteelblue;
   border-radius: 3px;
   width: 70%;
   margin: 0 auto;
+}
+
+.controls {
+  margin: 42px;
+  color: white;
+  font-weight: bold;
 }
 
 .current-note {

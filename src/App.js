@@ -73,9 +73,13 @@ class App extends Component {
             <h3 className="instructions">Each click generates sound (just wait for some notes to appear in the sequence table before clicking)</h3>
             {/* <CSlider value={this.gin.store.orchestrator.playback_rate} onChange={e => this.helpers.changePlaybackRate(this.state, e)} gin={this.gin} /> */}
             <div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>
+              <div className="controls">
+                <div>{"Time: " + this.gin.store.frame}</div>
+                <div>{"BPM: " + this.gin.store.frame_rate * 100}</div>
+              </div>
               <div className="flex-container-column">
                 {this.gin.store.fetched_sequence.length > 0  ? <Orchestrator fetched={false} state={this.state} gin={this.gin} /> : <div className="lds-dual-ring"></div>}
-              </div>
+                </div>
             </div>
           </div>
         </div>
