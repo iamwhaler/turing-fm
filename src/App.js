@@ -66,7 +66,7 @@ class App extends Component {
     return (
       
         <div className="App">
-          {<Dropdown/>}
+          <Dropdown/>
           <div className="app-content">
             <canvas className="canvas" width="1050" height="700"></canvas>
             <h3 className="instructions">Click before it fetched</h3>

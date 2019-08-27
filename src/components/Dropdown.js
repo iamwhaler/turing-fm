@@ -3,6 +3,13 @@ import '../components/Dropdown.scss';
 
 
 export class Dropdown extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            opened: false
+        }
+    }
+
     // panelWillOpen() {
     //     var elem = document.querySelector('#openPanel');
     //     elem.classList.toggle('dropdown--active');
@@ -11,14 +18,13 @@ export class Dropdown extends React.Component {
     render() {
         return (
             <div className="panel-container">
-                <div className="toggler">
+                <div className="toggler" onClick={() => this.setState({opened: true})}>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <div className="dropdown" id="openPanel">
-                </div>
+                {this.state.opened ? <div className="dropdown" id="openPanel">BLA</div> : ''}
             </div>
         )
     }
-  }
+}
