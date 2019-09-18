@@ -47,15 +47,14 @@ class App extends Component {
       initDone: true,
       fetched_sequence: []
     });
-    this.gin.playGame();
     this.helpers.requestSequence(this.gin);
-    this.helpers.drawCanvas();
+    //this.helpers.drawCanvas();
 
     var note = _.sample(airport);
 
 
 
-    var synth = new Tone.FatOscillator(note.note + note.octave, "sine", 40).toMaster().start();
+    //var synth = new Tone.FatOscillator(note.note + note.octave, "sine", 40).toMaster().start();
 
       setInterval(function() {
           note = _.sample(airport);
@@ -81,11 +80,11 @@ class App extends Component {
         <div className="App">
           <Dropdown/>
           <div className="app-content">
-            <canvas className="canvas" width="1050" height="700"></canvas>
-            <h3 className="instructions">Click before it fetched</h3>
+            {/* <canvas className="canvas" width="1050" height="700"></canvas> */}
             <h3 className="instructions">Each click generates sound (just wait for some notes to appear in the sequence table before clicking)</h3>
             {/* <CSlider value={this.gin.store.orchestrator.playback_rate} onChange={e => this.helpers.changePlaybackRate(this.state, e)} gin={this.gin} /> */}
-            <div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>
+            {!this.gin.store.game_paused ?
+                (<div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>
               <div className="controls">
                 <div>{"Time: " + this.gin.store.frame}</div>
                 <div>{"BPM: " + this.gin.store.frame_rate * 100}</div>
@@ -93,7 +92,7 @@ class App extends Component {
               <div className="flex-container-column">
                 {this.gin.store.fetched_sequence.length > 0  ? <Orchestrator fetched={false} state={this.state} gin={this.gin} /> : <div className="lds-dual-ring"></div>}
                 </div>
-            </div>
+            </div>) : <div><button className="btn btn-sequence" onClick={() => this.gin.playGame()}>Generate</button></div>}
           </div>
         </div>
     );
