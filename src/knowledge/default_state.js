@@ -14,6 +14,10 @@ export const default_state = {
   shortcuts_enabled: false,
   language: "en",
   soundEnable: true,
+  systems: [
+      {type: "star", context: {}},
+      {type: "planet", instrument: {}},
+  ],
   volume: 100,
   orchestrator: {
     current_note: 0,
@@ -24,7 +28,7 @@ export const default_state = {
     previousMonthMoney: 0,
     previousHeadCount: 0,
     dateOfRecord: 0,
-    monthTension: "low"
+    monthTension: "low",
   }
 };
 

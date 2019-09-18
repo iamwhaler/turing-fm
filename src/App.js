@@ -7,9 +7,12 @@ import { getDefaultState } from "./knowledge/default_state.js";
 import { Gin } from "./knowledge/Gin";
 import Helpers from "./knowledge/Helpers";
 import { rules } from "./knowledge/rules";
+import { airport } from "./knowledge/piano_notes";
 import $ from "jquery";
 import CSlider from "./components/Controls";
 import { soundManager } from "soundmanager2";
+import Tone from "tone";
+import _ from "lodash";
 
 
 
@@ -48,17 +51,27 @@ class App extends Component {
     this.helpers.requestSequence(this.gin);
     this.helpers.drawCanvas();
 
-    soundManager.setup({
-      url: '/path/to/swf-directory/',
-      onready: function() {
-        console.log("SM2 has loaded");
-      },
+    var note = _.sample(airport);
 
-      ontimeout: function() {
-        console.log("Uh-oh. No HTML5 support, SWF missing, Flash blocked or other issue\n")
-      }
 
-    });
+
+    var synth = new Tone.FatOscillator(note.note + note.octave, "sine", 40).toMaster().start();
+
+      setInterval(function() {
+          note = _.sample(airport);
+      }, 1000);
+
+      soundManager.setup({
+        url: '/path/to/swf-directory/',
+        onready: function() {
+          console.log("SM2 has loaded");
+        },
+
+        ontimeout: function() {
+          console.log("Uh-oh. No HTML5 support, SWF missing, Flash blocked or other issue\n")
+        }
+
+      });
   }
 
 
