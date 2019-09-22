@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import '../App.css';
 import { Orchestrator } from "./components/Orchestrator";
 import { Dropdown } from "./components/Dropdown";
 import { getDefaultState } from "./knowledge/default_state.js";
@@ -13,6 +13,7 @@ import CSlider from "./components/Controls";
 import { soundManager } from "soundmanager2";
 import Tone from "tone";
 import _ from "lodash";
+import {SolarSystemsList} from "./components/solar_system/SolarSystemsList";
 
 
 
@@ -78,7 +79,8 @@ class App extends Component {
     return (
       
         <div className="App">
-          <Dropdown/>
+          {/*<Dropdown/>*/}
+          <SolarSystemsList gin={this.gin} />
           <div className="app-content">
             {/* <canvas className="canvas" width="1050" height="700"></canvas> */}
             <h3 className="instructions">Each click generates sound (just wait for some notes to appear in the sequence table before clicking)</h3>
