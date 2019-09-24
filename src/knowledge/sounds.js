@@ -1,4 +1,4 @@
-import {notes} from "./piano_samples";
+import {notes} from "./piano_notes";
 
 export const sounds = {
   piano: {
