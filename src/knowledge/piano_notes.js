@@ -1,64 +1,64 @@
 
-import a3 from "../audio/piano/Piano.pp.A3.mp3";
-import a4 from "../audio/piano/Piano.pp.A4.mp3";
-import a5 from "../audio/piano/Piano.pp.A5.mp3";
-import a6 from "../audio/piano/Piano.pp.A6.mp3";
+import a3 from "../assets/audio/piano/Piano.pp.A3.mp3";
+import a4 from "../assets/audio/piano/Piano.pp.A4.mp3";
+import a5 from "../assets/audio/piano/Piano.pp.A5.mp3";
+import a6 from "../assets/audio/piano/Piano.pp.A6.mp3";
 
-import ab3 from "../audio/piano/Piano.pp.Ab3.mp3";
-import ab4 from "../audio/airport/piano-Ab4.mp3";
-import ab5 from "../audio/airport/piano-Ab5.mp3";
-import ab6 from "../audio/airport/piano-Ab6.mp3";
+import ab3 from "../assets/audio/piano/Piano.pp.Ab3.mp3";
+import ab4 from "../assets/audio/airport/piano-Ab4.mp3";
+import ab5 from "../assets/audio/airport/piano-Ab5.mp3";
+import ab6 from "../assets/audio/airport/piano-Ab6.mp3";
 
-import b3 from "../audio/piano/Piano.pp.B3.mp3";
-import b4 from "../audio/piano/Piano.pp.B4.mp3";
-import b5 from "../audio/piano/Piano.pp.B5.mp3";
-import b6 from "../audio/piano/Piano.pp.B6.mp3";
+import b3 from "../assets/audio/piano/Piano.pp.B3.mp3";
+import b4 from "../assets/audio/piano/Piano.pp.B4.mp3";
+import b5 from "../assets/audio/piano/Piano.pp.B5.mp3";
+import b6 from "../assets/audio/piano/Piano.pp.B6.mp3";
 
-import bb3 from "../audio/piano/Piano.pp.Bb3.mp3";
-import bb4 from "../audio/piano/Piano.pp.Bb4.mp3";
-import bb5 from "../audio/piano/Piano.pp.Bb5.mp3";
-import bb6 from "../audio/piano/Piano.pp.Bb6.mp3";
+import bb3 from "../assets/audio/piano/Piano.pp.Bb3.mp3";
+import bb4 from "../assets/audio/piano/Piano.pp.Bb4.mp3";
+import bb5 from "../assets/audio/piano/Piano.pp.Bb5.mp3";
+import bb6 from "../assets/audio/piano/Piano.pp.Bb6.mp3";
 
-import c3 from "../audio/piano/Piano.pp.C3.mp3";
-import c4 from "../audio/airport/piano-C4.mp3";
-import c5 from "../audio/airport/piano-C5.mp3";
-import c6 from "../audio/airport/piano-C6.mp3";
+import c3 from "../assets/audio/piano/Piano.pp.C3.mp3";
+import c4 from "../assets/audio/airport/piano-C4.mp3";
+import c5 from "../assets/audio/airport/piano-C5.mp3";
+import c6 from "../assets/audio/airport/piano-C6.mp3";
 
-import d3 from "../audio/piano/Piano.pp.D3.mp3";
-import d4 from "../audio/piano/Piano.pp.D4.mp3";
-import d5 from "../audio/piano/Piano.pp.D5.mp3";
-import d6 from "../audio/piano/Piano.pp.D6.mp3";
+import d3 from "../assets/audio/piano/Piano.pp.D3.mp3";
+import d4 from "../assets/audio/piano/Piano.pp.D4.mp3";
+import d5 from "../assets/audio/piano/Piano.pp.D5.mp3";
+import d6 from "../assets/audio/piano/Piano.pp.D6.mp3";
 
-import db3 from "../audio/piano/Piano.pp.Db3.mp3";
-import db4 from "../audio/airport/piano-Db4.mp3";
-import db5 from "../audio/airport/piano-Db5.mp3";
-import db6 from "../audio/airport/piano-Db6.mp3";
+import db3 from "../assets/audio/piano/Piano.pp.Db3.mp3";
+import db4 from "../assets/audio/airport/piano-Db4.mp3";
+import db5 from "../assets/audio/airport/piano-Db5.mp3";
+import db6 from "../assets/audio/airport/piano-Db6.mp3";
 
 
-import e3 from "../audio/piano/Piano.pp.E3.mp3";
-import e4 from "../audio/piano/Piano.pp.E4.mp3";
-import e5 from "../audio/piano/Piano.pp.E5.mp3";
-import e6 from "../audio/piano/Piano.pp.E6.mp3";
+import e3 from "../assets/audio/piano/Piano.pp.E3.mp3";
+import e4 from "../assets/audio/piano/Piano.pp.E4.mp3";
+import e5 from "../assets/audio/piano/Piano.pp.E5.mp3";
+import e6 from "../assets/audio/piano/Piano.pp.E6.mp3";
 
-import eb3 from "../audio/piano/Piano.pp.Eb3.mp3";
-import eb4 from "../audio/airport/piano-Eb4.mp3";
-import eb5 from "../audio/airport/piano-Eb5.mp3";
-import eb6 from "../audio/airport/piano-Eb6.mp3";
+import eb3 from "../assets/audio/piano/Piano.pp.Eb3.mp3";
+import eb4 from "../assets/audio/airport/piano-Eb4.mp3";
+import eb5 from "../assets/audio/airport/piano-Eb5.mp3";
+import eb6 from "../assets/audio/airport/piano-Eb6.mp3";
 
-import f3 from "../audio/piano/Piano.pp.F3.mp3";
-import f4 from "../audio/airport/piano-F4.mp3";
-import f5 from "../audio/airport/piano-F5.mp3";
-import f6 from "../audio/airport/piano-F6.mp3";
+import f3 from "../assets/audio/piano/Piano.pp.F3.mp3";
+import f4 from "../assets/audio/airport/piano-F4.mp3";
+import f5 from "../assets/audio/airport/piano-F5.mp3";
+import f6 from "../assets/audio/airport/piano-F6.mp3";
 
-import g3 from "../audio/piano/Piano.pp.G3.mp3";
-import g4 from "../audio/piano/Piano.pp.G4.mp3";
-import g5 from "../audio/piano/Piano.pp.G5.mp3";
-import g6 from "../audio/piano/Piano.pp.G6.mp3";
+import g3 from "../assets/audio/piano/Piano.pp.G3.mp3";
+import g4 from "../assets/audio/piano/Piano.pp.G4.mp3";
+import g5 from "../assets/audio/piano/Piano.pp.G5.mp3";
+import g6 from "../assets/audio/piano/Piano.pp.G6.mp3";
 
-import gb3 from "../audio/piano/Piano.pp.Gb3.mp3";
-import gb4 from "../audio/piano/Piano.pp.Gb4.mp3";
-import gb5 from "../audio/piano/Piano.pp.Gb5.mp3";
-import gb6 from "../audio/piano/Piano.pp.Gb6.mp3";
+import gb3 from "../assets/audio/piano/Piano.pp.Gb3.mp3";
+import gb4 from "../assets/audio/piano/Piano.pp.Gb4.mp3";
+import gb5 from "../assets/audio/piano/Piano.pp.Gb5.mp3";
+import gb6 from "../assets/audio/piano/Piano.pp.Gb6.mp3";
 
 export let piano_notes = [
   {note: 'A', octave: 3, file: a3},
