@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/core": "7.4.3",
     "@babel/runtime": "^7.5.4",
     "@material-ui/core": "^4.1.1",
     "@material-ui/lab": "^4.0.0-alpha.16",
@@ -12,11 +11,9 @@
     "@typescript-eslint/parser": "1.6.0",
     "babel-eslint": "10.0.1",
     "babel-jest": "24.7.1",
-    "babel-loader": "8.0.5",
     "babel-plugin-named-asset-import": "^0.3.2",
     "babel-preset-react-app": "^8.0.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
-    "css-loader": "2.1.1",
     "dotenv": "6.2.0",
     "dotenv-expand": "4.2.0",
     "eslint": "^5.16.0",
@@ -27,7 +24,6 @@
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-react-hooks": "^1.5.0",
-    "file-loader": "3.0.1",
     "fs-extra": "7.0.1",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
@@ -39,7 +35,6 @@
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
     "mini-css-extract-plugin": "0.5.0",
-    "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.2.1",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -58,15 +53,11 @@
     "react-sound": "^1.2.0",
     "resolve": "1.10.0",
     "sass": "^1.21.0",
-    "sass-loader": "7.1.0",
     "semver": "6.0.0",
     "soundmanager2": "^2.97.20170602",
-    "style-loader": "0.23.1",
     "terser-webpack-plugin": "1.2.3",
     "tone": "^13.8.25",
     "url-loader": "1.1.2",
-    "webpack": "4.29.6",
-    "webpack-dev-server": "3.2.1",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "4.2.0"
   },
@@ -94,7 +85,24 @@
     ]
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^5.0.3"
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^3.0.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^0.23.1",
+    "webpack": "4.35.0",
+    "webpack-cli": "3.3.5",
+    "webpack-dev-server": "3.7.2"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -143,7 +151,13 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties"
+      ]
     ]
   }
 }

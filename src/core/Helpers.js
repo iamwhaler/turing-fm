@@ -1,5 +1,5 @@
 import _ from "lodash";
-import {piano_notes} from "./piano_notes";
+import {piano_notes} from "../knowledge/piano_notes";
 import Sound from "react-sound";
 import React from "react"
 import $ from "jquery";

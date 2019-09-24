@@ -20,6 +20,7 @@ export const default_state = {
   ],
   solar_systems: [],
   solar_systems_count: 0,
+  selected_solar_system_id: null,
   volume: 100,
   orchestrator: {
     current_note: 0,
