@@ -1,5 +1,7 @@
 import _ from "lodash";
-import {piano_notes} from "../knowledge/piano_notes";
+import {piano_samples} from "../knowledge/piano_samples";
+import {violin_samples} from "../knowledge/violin_samples";
+
 import Sound from "react-sound";
 import React from "react"
 import $ from "jquery";
@@ -62,8 +64,9 @@ export default class Helpers {
         xhr.open('GET', _ENDPOINT, true);
         xhr.onload = function () {
             _.each(JSON.parse(this.responseText), item => {
-                gin.store.fetched_sequence.push(_.sample(_.filter(piano_notes, note => note.note === item)));
-                _.each(gin.store.fetched_sequence, (part, key) => {
+                gin.store.fetched_sequence.push(_.sample(_.filter(piano_samples, note => note.note === item)));
+              gin.store.fetched_sequence.push(_.sample(_.filter(violin_samples, note => note.note === item)) || []);
+              _.each(gin.store.fetched_sequence, (part, key) => {
                     let tick = gin.store.tick;
                     gin.store.fetched_sequence[key].time = _.random(tick, tick + 15); // tick is a reference thus dynamic, to fix
                 })
@@ -95,7 +98,7 @@ export default class Helpers {
 
     fetchSequence = (seq) => {
         let fetchedNotes = [];
-        _.each(seq, item => fetchedNotes.push(_.sample(_.filter(piano_notes, note => note.note === item))));
+        _.each(seq, item => fetchedNotes.push(_.sample(_.filter(piano_samples, note => note.note === item))));
         return fetchedNotes
         //console.log(fetchedNotes);
     };

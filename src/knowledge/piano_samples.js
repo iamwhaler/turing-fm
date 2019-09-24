@@ -60,7 +60,7 @@ import gb4 from "../assets/audio/piano/Piano.pp.Gb4.mp3";
 import gb5 from "../assets/audio/piano/Piano.pp.Gb5.mp3";
 import gb6 from "../assets/audio/piano/Piano.pp.Gb6.mp3";
 
-export let piano_notes = [
+export let piano_samples = [
   {note: 'A', octave: 3, file: a3},
   {note: 'A', octave: 4, file: a4},
   {note: 'A', octave: 5, file: a5},

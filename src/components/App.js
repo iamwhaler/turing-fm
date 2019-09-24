@@ -7,7 +7,7 @@ import { getDefaultState } from "../core/default_state.js";
 import { Gin } from "../core/Gin";
 import Helpers from "../core/Helpers";
 import { rules } from "../core/rules";
-import { airport } from "../knowledge/piano_notes";
+import { airport } from "../knowledge/piano_samples";
 import $ from "jquery";
 import CSlider from "./Controls";
 import { soundManager } from "soundmanager2";
