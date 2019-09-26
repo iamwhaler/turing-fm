@@ -12,7 +12,6 @@ export const rules = {
           store.orchestrator.current_note = key;
         }
       });
-
       return store;
     }
   }
