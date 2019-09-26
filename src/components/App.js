@@ -91,9 +91,6 @@ class App extends Component {
                       <div>{"Time: " + this.gin.store.frame}</div>
                       <div>{"BPM: " + this.gin.store.frame_rate * 100}</div>
                     </div>
-                    <div className="flex-container-column">
-                      {this.gin.store.fetched_sequence.length > 0  ? <Orchestrator fetched={false} state={this.state} gin={this.gin} /> : <div className="lds-dual-ring"></div>}
-                    </div>
                   </div>) : <div><button className="btn btn-sequence" onClick={() => this.gin.playGame()}>Generate</button></div>}
             </div>
         )

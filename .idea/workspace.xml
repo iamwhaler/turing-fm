@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26e7dcf-c16c-4441-b5ef-1296d75109f9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/solar_system/Orbit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/solar_system/Planet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/solar_system/Sun.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/components/_App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/components/_App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/components/_solar-system.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/components/_solar-system.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/turing-fm.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/solar_system/SolarSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/solar_system/SolarSystem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/solar_system/SolarSystemManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/solar_system/SolarSystemManager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/solar_system/SolarSystemsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/solar_system/SolarSystemsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/rules.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/solar_system.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/solar_system.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Helpers.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
+              <caret line="101" column="12" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -40,11 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/styles/components/_solar-system.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="28" column="36" selection-start-line="27" selection-start-column="8" selection-end-line="28" selection-end-column="36" />
+            <state relative-caret-position="120">
+              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -62,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/assets/styles/components/_App.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-60">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -110,22 +113,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/solar_system/Orbit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/solar_system/SolarSystemsList.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -183,7 +174,6 @@
         <option value="$PROJECT_DIR$/src/knowledge/GinConsole.js" />
         <option value="$PROJECT_DIR$/src/default_state.js" />
         <option value="$PROJECT_DIR$/inject.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/small-gm-api/.gitignore" />
         <option value="$PROJECT_DIR$/src/knowledge/Gin.js" />
         <option value="$PROJECT_DIR$/config/webpack.config.js" />
@@ -224,6 +214,7 @@
         <option value="$PROJECT_DIR$/src/components/solar_system/SolarSystemsList.js" />
         <option value="$PROJECT_DIR$/src/assets/styles/components/_App.scss" />
         <option value="$PROJECT_DIR$/src/assets/styles/components/_solar-system.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -244,79 +235,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="turing-fm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="turing-fm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="turing-fm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="turing-fm" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="turing-fm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="turing-fm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="turing-fm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="turing-fm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="turing-fm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="turing-fm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="turing-fm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="turing-fm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="turing-fm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="turing-fm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="turing-fm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="turing-fm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="solar_system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="turing-fm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="turing-fm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="turing-fm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="turing-fm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="turing-fm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="turing-fm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="knowledge" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -406,18 +325,18 @@
       <workItem from="1569243006174" duration="11144000" />
       <workItem from="1569258606197" duration="1426000" />
       <workItem from="1569260764072" duration="9110000" />
-      <workItem from="1569351622612" duration="25834000" />
+      <workItem from="1569351622612" duration="25958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235816000" />
+    <option name="totallyTimeSpent" value="235940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="728" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1764706" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1764706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -429,8 +348,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.27586207" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32931036" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.56551725" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32931036" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -537,13 +456,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -742,7 +654,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="12" />
+          <caret line="101" column="12" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -779,7 +691,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/solar_system/SolarSystemsList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -789,7 +701,7 @@
     <entry file="file://$PROJECT_DIR$/src/assets/styles/components/_App.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -802,8 +714,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/styles/components/_solar-system.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="28" column="36" selection-start-line="27" selection-start-column="8" selection-end-line="28" selection-end-column="36" />
+        <state relative-caret-position="120">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>

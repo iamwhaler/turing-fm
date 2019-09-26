@@ -24,6 +24,8 @@ export default class Helpers {
 
     createSound = (path, callback) => {
         soundManager.createSound({
+            id: new Date(),
+            multiShotEvents: true,
             url: path,
             onfinish: function () {
                 soundManager._writeDebug(this.url + ' finished playing');
@@ -63,7 +65,7 @@ export default class Helpers {
                 gin.store.fetched_sequence.push(_.sample(_.filter(piano_notes, note => note.note === item)));
                 _.each(gin.store.fetched_sequence, (part, key) => {
                     let tick = gin.store.tick;
-                    gin.store.fetched_sequence[key].time = _.random(tick, tick * 10); // tick is a reference thus dynamic, to fix
+                    gin.store.fetched_sequence[key].time = _.random(tick, tick + 15); // tick is a reference thus dynamic, to fix
                 })
             });
             if (callback) callback();
