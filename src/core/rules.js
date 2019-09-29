@@ -1,4 +1,6 @@
 import _ from "lodash";
+import { genChordProgression, genSequence } from "../features/progressions_algorhythm";
+import { progressions, chords } from "../knowledge/piano_notes";
 
 export const rules = {
   tick: {
@@ -12,6 +14,10 @@ export const rules = {
           store.orchestrator.current_note = key;
         }
       });
+
+      if (store.progression.length < 4) genChordProgression(params.gin, store, "C", progressions);
+
+      if (store.progression.length > 1) genSequence(params.gin, store, chords);
 
       return store;
     }
