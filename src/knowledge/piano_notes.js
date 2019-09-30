@@ -1,4 +1,3 @@
-
 import a3 from "../assets/audio/piano/Piano.pp.A3.mp3";
 import a4 from "../assets/audio/piano/Piano.pp.A4.mp3";
 import a5 from "../assets/audio/piano/Piano.pp.A5.mp3";
@@ -145,3 +144,17 @@ export const airport = [
 export const airport_progressions = [["Ab", "C", "Db", "Eb", "F"], ["Ab", "Eb", "C", "Eb"], ["Ab", "C", "Db", "Ab", "C", "F", "Ab"]];
 
 export const rhytmic_patterns = [];
+
+export const progressions = [
+  {base: "C", type: "optimist", chords: ["C", "G", "Am", "F"]},
+  {base: "C", type: "optimist", chords: ["G", "Am", "F", "C"]},
+  {base: "C", type: "pessimist", chords: ["Am", "F", "C", "G"]},
+  {base: "C", type: "pessimist", chords: ["F", "C", "G", "Am"]},
+];
+
+export const chords = [
+  {chord: "C", notes: ["C", "E", "G"]},
+  {chord: "G", notes: ["G", "B", "D", "F"]},
+  {chord: "Am", notes: ["A", "C", "E"]},
+  {chord: "F", notes: ["F", "A", "C", "E"]}
+];
