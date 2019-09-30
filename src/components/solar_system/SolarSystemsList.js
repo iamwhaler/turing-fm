@@ -2,7 +2,7 @@ import React from 'react';
 import _ from "lodash";
 import { createNewSolarSystem, setCurrentSolarSystem }from "../../features/solar_system";
 
-export class SolarSystemsList extends React.Component {
+class SolarSystemsList extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -15,9 +15,11 @@ export class SolarSystemsList extends React.Component {
             <div className="solar-systems-list">
                 <button onClick={() => createNewSolarSystem(gin, store) }> Create new system </button>
                 {this.props.gin.store.solar_systems.map(system => {
-                    return <button key={system.id} onClick={() => { setCurrentSolarSystem(gin, store, system.id) }} className={"system-list-element"}>{system.id}</button>
+                    return <div className={`system-list-element ${system.id === store.selected_solar_system_id ? "selected" : ""}`} key={system.id} onClick={() => { setCurrentSolarSystem(gin, store, system.id) }}>{system.id}</div>
                 })}
             </div>
         )
     }
 }
+
+export default SolarSystemsList;
