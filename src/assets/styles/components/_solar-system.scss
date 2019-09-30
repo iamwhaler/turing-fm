@@ -2,16 +2,48 @@
     margin-top: 10px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .solar-systems-list {
-    width: 200px;
-    height: 800px;
+    width: 20%;
+    margin-right: 30px;
+    height: 80%;
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.system-list-element {
+    width: 100%;
+    height: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: white;
+    &.selected {
+        box-shadow: 0 0 2px gray inset;
+        background-color: lightgray;
+    }
+    &:hover {
+        box-shadow: 0 0 2px gray inset;
+        background-color: lightgray;
+    }
 }
 
 .solar-system {
-    width: 600px;
-    height: 800px;
     border: 1px solid red;
+    width: 600px;
+    height: 600px;
+}
+
+
+.orbit-circle {
+    position: absolute;
+    fill: none;
+    stroke: #000;
+}
+
+.orbit {
+    position: absolute;
+    overflow: visible;
 }

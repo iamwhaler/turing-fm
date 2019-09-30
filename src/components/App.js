@@ -103,6 +103,7 @@ class App extends Component {
       
         <div className="App">
           <Dropdown/>
+          <button onClick={() => { console.log(this.gin.store)}}>Console state</button>
           <button onClick={() => { this.setState({ current: "prototype" })}}>Prototype</button>
           <button onClick={() => { this.setState({ current: "solar_system" })}}>Solar system</button>
           {content}
