@@ -19,6 +19,7 @@ export const default_state = {
       {type: "planet", instrument: {}},
   ],
   progression: [],
+  sequence: [],
   solar_systems: [],
   solar_systems_count: 0,
   selected_solar_system_id: null,

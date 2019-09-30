@@ -15,9 +15,16 @@ export const rules = {
         }
       });
 
+
+      console.log(store.sequence, store.progression);
+
       if (store.progression.length < 4) genChordProgression(params.gin, store, "C", progressions);
 
-      if (store.progression.length > 1) genSequence(params.gin, store, chords);
+      if (store.sequence.length < 16) genSequence(params.gin, store, chords);
+
+      store.sequence.forEach(note => {
+
+      });
 
       return store;
     }

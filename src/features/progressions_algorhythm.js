@@ -5,22 +5,16 @@ export const genChordProgression = (gin, store, base, progressions, type = "opti
     return item.base === base && item.type === type;
   });
 
-  if (prog_pool.length > 1) {
-    store.progression = [...store.progression, ...[_.sample(prog_pool)]];
-  } else {
-    store.progression = [...store.progression, ...prog_pool];
-  }
-  console.log(store.progression);
+  if (prog_pool.length > 1) prog_pool = _.sample(prog_pool);
+  store.progression = store.progression.concat(prog_pool);
   gin.setState(store);
 };
 
 export const genSequence = (gin, store, chords, base) => {
-  let sequence = [];
   if (!base && store.progression) store.progression.forEach(key => {
-    key.chords.forEach((chord, id) => {
-      sequence.push(chords.filter(seq => seq.chord === chord)[0].notes)
+    key.chords.forEach(chord => {
+      store.sequence.push(chords.filter(seq => seq.chord === chord)[0].notes)
     });
   });
-  console.log(sequence);
   gin.setState(store);
 };
