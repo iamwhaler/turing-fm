@@ -21,7 +21,7 @@ export const rules = {
 
       if (store.sequence.length < 4) genSequence(params.gin, store, chords);
 
-      if (store.tick % 10 === 2) _.each(store.sequence, note => {
+      if (store.tick % 100 === 0) _.each(store.sequence, note => {
         store.fetched_sequence = [...params.helpers.fetchSequence(note), ...store.fetched_sequence];
       });
       console.log(store.fetched_sequence)
