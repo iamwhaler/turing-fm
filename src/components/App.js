@@ -42,7 +42,6 @@ class App extends Component {
     this.gin.initLoop();
     this.state.initDone = false;
     this.gin.params["helpers"] = this.helpers;
-
   }
 
   componentDidMount() {
@@ -54,8 +53,6 @@ class App extends Component {
     //this.helpers.drawCanvas();
 
     var note = _.sample(airport);
-
-
 
 
       setInterval(function() {

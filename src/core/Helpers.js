@@ -40,7 +40,7 @@ export default class Helpers {
       sample[note] = path;
 
       let sampler = new Tone.Sampler(sample, function(){
-        sampler.triggerAttack(note).toMaster().start();
+        sampler.triggerAttack(note).triggerRelease("+4n").toMaster().start();
         if (callback) callback();
       })
     };

@@ -1,5 +1,5 @@
 import _ from "lodash";
-
+import Tone from "tone";
 import Lamp from "./Lamp";
 import { GinConsole } from "./GinConsole";
 
@@ -201,7 +201,9 @@ export class Gin {
         let next_store = item.onFrame(store, this.params);
         // console.log('tick', key, next_store);
         if (next_store) {
-          store = next_store;
+          var loop = new Tone.Loop(() => {
+            store = next_store
+          }, "12n").toMaster().start(0);
         } else {
           console.log("!!!BROKEN RULE!!!", key, next_store);
         }
