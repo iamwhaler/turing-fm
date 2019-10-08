@@ -1,3 +1,9 @@
+circle {
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
 .solar-systems-manager {
     margin-top: 10px;
     display: flex;
@@ -46,4 +52,11 @@
 .orbit {
     position: absolute;
     overflow: visible;
+}
+
+.modal {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: white;
 }

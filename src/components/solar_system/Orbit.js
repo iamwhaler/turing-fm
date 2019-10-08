@@ -22,19 +22,22 @@ class Orbit extends React.Component {
     }
 
     render() {
-        let { container_size, r, spin, time_length } = this.props;
+        let { container_size, orbit_r, spin, time_length } = this.props.data;
         console.log("orbit props")
         console.log(this.props);
         return (
             <div style={{
-                position: "absolute"
+                position: "absolute",
+                pointerEvents: "none"
             }}>
+                <div className={"check"}>
                 {this.props.children}
                 <svg width={container_size} height={container_size}>
                     <g color="gray">
-                        <circle fill="none" strokeWidth="1" stroke="currentColor" cx={container_size / 2} cy={container_size / 2} r={r} />
+                        <circle fill="none" strokeWidth="1" stroke="currentColor" cx={container_size / 2} cy={container_size / 2} r={orbit_r} />
                     </g>
                 </svg>
+                </div>
             </div>
         )
     }
