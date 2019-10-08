@@ -57,7 +57,6 @@ class App extends Component {
 
 
 
-    //var synth = new Tone.FatOscillator(note.note + note.octave, "sine", 40).toMaster().start();
 
       setInterval(function() {
           note = _.sample(airport);
@@ -83,7 +82,6 @@ class App extends Component {
         return (
             <div className="app-content">
               {/* <canvas className="canvas" width="1050" height="700"></canvas> */}
-              <h3 className="instructions">Each click generates sound (just wait for some notes to appear in the sequence table before clicking)</h3>
               {/* <CSlider value={this.gin.store.orchestrator.playback_rate} onChange={e => this.helpers.changePlaybackRate(this.state, e)} gin={this.gin} /> */}
               {!this.gin.store.game_paused ?
                   (<div className="flex-container-row" style={{ height: "100%", justifyContent: "space-around"}}>

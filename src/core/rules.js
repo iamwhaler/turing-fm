@@ -9,10 +9,12 @@ export const rules = {
 
       _.each(store.fetched_sequence, (item, key) => {
         if (item.time === store.tick) {
-          params.helpers.createSound(item.file);
+          //params.helpers.createSound(item.file);
           // if (key === store.fetched_sequence.length - 1) {
           //   params.helpers.requestSequence(params.gin);
           // }
+
+          params.helpers.createToneSound(item.note + item.octave , item.file);
           store.orchestrator.current_note = key;
         }
       });
@@ -24,7 +26,7 @@ export const rules = {
       if (store.tick % 100 === 0) _.each(store.sequence, note => {
         store.fetched_sequence = [...params.helpers.fetchSequence(note), ...store.fetched_sequence];
       });
-      console.log(store.fetched_sequence)
+      console.log(store.fetched_sequence);
 
       store.fetched_sequence.forEach((item, key) => {
         item.time = _.random(store.tick, Math.floor(store.tick + key * 4));

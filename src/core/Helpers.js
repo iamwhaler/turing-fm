@@ -1,6 +1,7 @@
 import _ from "lodash";
 import {piano_notes} from "../knowledge/piano_notes";
 import Sound from "react-sound";
+import Tone from "tone";
 import React from "react"
 import $ from "jquery";
 import {soundManager} from "soundmanager2";
@@ -32,6 +33,16 @@ export default class Helpers {
                 if (callback) callback();
             }
         }).play();
+    };
+
+    createToneSound = (note, path, callback) => {
+      let sample = {};
+      sample[note] = path;
+
+      let sampler = new Tone.Sampler(sample, function(){
+        sampler.triggerAttack(note).toMaster().start();
+        if (callback) callback();
+      })
     };
 
     createSoundById = id => {
