@@ -25,10 +25,21 @@ class SolarSystem extends React.Component {
         }
         let create_planet_button = <button onClick={() => createNewPlanet(gin, store)}>Create planet</button>;
         let toggle_spin_button = <button onClick={() => spinToggle(gin, store, solar_system.id, !solar_system.spin)}>{solar_system.spin ? "Stop" : "Start"}</button>;
+
         let orbits = _.map(solar_system.orbits, (orbit, i) => {
+            let data = {
+                container_size: container_size,
+                system_id: solar_system.id,
+                spin: solar_system.spin,
+                orbit: orbit,
+                orbit_id: i,
+                orbit_r: 70 + 20 * i,
+                time_length: orbit.time_length
+            };
+
             return (
-                <Orbit container_size={container_size} r={70 + 20 * i} >
-                    <Planet container_size={container_size} r={8} orbit_r={70 + 20 * i} spin={solar_system.spin} time_length={orbit.time_length}/>
+                <Orbit gin={gin} store={store} data={data} >
+                    <Planet gin={gin} store={store} data={data}/>
                 </Orbit>
             )
         });

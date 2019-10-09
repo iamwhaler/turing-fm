@@ -12,17 +12,18 @@ class Sun extends React.Component {
     render() {
         let { container_size, r } = this.props;
         return (
-            <div style={{
+            <div className="sun" style={{
                 width: container_size,
                 height: container_size,
                 position: "absolute"
             }}>
-
-                <svg width={container_size} height={container_size}>
-                    <g color="orangered">
-                        <circle fill="currentColor" cx={container_size / 2} cy={container_size / 2} r={r} />
-                    </g>
-                </svg>
+                <div className="sun-clickable" style={{ width: 2*r, height: 2*r, zIndex: 1000 }}>
+                    <svg width={container_size} height={container_size}>
+                        <g color="orangered">
+                            <circle fill="currentColor" cx={container_size / 2} cy={container_size / 2} r={r} />
+                        </g>
+                    </svg>
+                </div>
             </div>
         )
     }
