@@ -1,0 +1,58 @@
+{
+  "vsco2-piano-mf": {
+    "A0": "a0.wav",
+    "C#1": "csharp1.wav",
+    "F1": "f1.wav",
+    "C#2": "csharp2.wav",
+    "F2": "f2.wav",
+    "A2": "a2.wav",
+    "C#3": "csharp3.wav",
+    "F3": "f3.wav",
+    "A3": "a3.wav",
+    "C#4": "csharp4.wav",
+    "F4": "f4.wav",
+    "A4": "a4.wav",
+    "C#5": "csharp5.wav",
+    "F5": "f5.wav",
+    "A5": "a5.wav",
+    "C#6": "csharp6.wav",
+    "F6": "f6.wav",
+    "A6": "a6.wav",
+    "C#7": "csharp7.wav",
+    "F7": "f7.wav",
+    "A7": "a7.wav",
+    "C8": "c8.wav"
+  },
+  "vsco2-cello-spic": {
+    "1": {
+      "A2": "../assets/audio/vsco2-cello/spic/a2_1.wav",
+      "B1": "../assets/audio/vsco2-cello/spic/b1_1.wav",
+      "B3": "../assets/audio/vsco2-cello/spic/b3_1.wav",
+      "C1": "../assets/audio/vsco2-cello/spic/c1_1.wav",
+      "C3": "../assets/audio/vsco2-cello/spic/c3_1.wav",
+      "D2": "../assets/audio/vsco2-cello/spic/d2_1.wav",
+      "D4": "../assets/audio/vsco2-cello/spic/d4_1.wav",
+      "E1": "../assets/audio/vsco2-cello/spic/e1_1.wav",
+      "E3": "../assets/audio/vsco2-cello/spic/e3_1.wav",
+      "F2": "../assets/audio/vsco2-cello/spic/f2_1.wav",
+      "F4": "../assets/audio/vsco2-cello/spic/f4_1.wav",
+      "G1": "../assets/audio/vsco2-cello/spic/g1_1.wav",
+      "G3": "../assets/audio/vsco2-cello/spic/g3_1.wav"
+    },
+    "2": {
+      "A2": "../assets/audio/vsco2-cello/spic/a2_2.wav",
+      "B1": "../assets/audio/vsco2-cello/spic/b1_2.wav",
+      "B3": "../assets/audio/vsco2-cello/spic/b3_2.wav",
+      "C1": "../assets/audio/vsco2-cello/spic/c1_2.wav",
+      "C3": "../assets/audio/vsco2-cello/spic/c3_2.wav",
+      "D2": "../assets/audio/vsco2-cello/spic/d2_2.wav",
+      "D4": "../assets/audio/vsco2-cello/spic/d4_2.wav",
+      "E1": "../assets/audio/vsco2-cello/spic/e1_2.wav",
+      "E3": "../assets/audio/vsco2-cello/spic/e3_2.wav",
+      "F2": "../assets/audio/vsco2-cello/spic/f2_2.wav",
+      "F4": "../assets/audio/vsco2-cello/spic/f4_2.wav",
+      "G1": "../assets/audio/vsco2-cello/spic/g1_2.wav",
+      "G3": "../assets/audio/vsco2-cello/spic/g3_2.wav"
+    }
+  }
+}

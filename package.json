@@ -58,6 +58,7 @@
     "soundmanager2": "^2.97.20170602",
     "styled-components": "^4.4.0",
     "terser-webpack-plugin": "1.2.3",
+    "tonal": "^2.2.2",
     "tone": "^13.8.25",
     "url-loader": "1.1.2",
     "webpack-manifest-plugin": "2.0.4",
