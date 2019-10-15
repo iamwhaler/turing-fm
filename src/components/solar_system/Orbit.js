@@ -23,8 +23,6 @@ class Orbit extends React.Component {
 
     render() {
         let { container_size, orbit_r, spin, time_length } = this.props.data;
-        console.log("orbit props")
-        console.log(this.props);
         return (
             <div
                 style={{
