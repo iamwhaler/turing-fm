@@ -16,8 +16,9 @@ export const setCurrentSolarSystem = (gin, store, id) => {
 };
 
 export const createNewPlanet = (gin, store) => {
-    store.solar_systems[store.selected_solar_system_id].orbits.push({ time_length: _.random(5, 15), planets: [{ sequence: [], instrument: _.sample(instruments)}]});
-    gin.setState(store);
+  document.dispatchEvent(new Event('planet_created'));
+  store.solar_systems[store.selected_solar_system_id].orbits.push({ time_length: _.random(5, 15), planets: [{ sequence: [], instrument: _.sample(instruments)}]});
+  gin.setState(store);
 };
 
 export const changeOrbitParameter = (gin, store, data) => {

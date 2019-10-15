@@ -1,7 +1,7 @@
-import a3 from "../assets/audio/piano/Piano.pp.A3.mp3";
-import a4 from "../assets/audio/piano/Piano.pp.A4.mp3";
-import a5 from "../assets/audio/piano/Piano.pp.A5.mp3";
-import a6 from "../assets/audio/piano/Piano.pp.A6.mp3";
+import a3 from "../assets/audio/vsco2-piano-mf/a3.wav";
+import a4 from "../assets/audio/vsco2-piano-mf/a4.wav";
+import a5 from "../assets/audio/vsco2-piano-mf/a5.wav";
+import a6 from "../assets/audio/vsco2-piano-mf/a6.wav";
 
 import ab3 from "../assets/audio/piano/Piano.pp.Ab3.mp3";
 import ab4 from "../assets/audio/airport/piano-Ab4.mp3";
@@ -44,10 +44,10 @@ import eb4 from "../assets/audio/airport/piano-Eb4.mp3";
 import eb5 from "../assets/audio/airport/piano-Eb5.mp3";
 import eb6 from "../assets/audio/airport/piano-Eb6.mp3";
 
-import f3 from "../assets/audio/piano/Piano.pp.F3.mp3";
-import f4 from "../assets/audio/airport/piano-F4.mp3";
-import f5 from "../assets/audio/airport/piano-F5.mp3";
-import f6 from "../assets/audio/airport/piano-F6.mp3";
+import f3 from "../assets/audio/vsco2-piano-mf/f3.wav";
+import f4 from "../assets/audio/vsco2-piano-mf/f4.wav";
+import f5 from "../assets/audio/vsco2-piano-mf/f5.wav";
+import f6 from "../assets/audio/vsco2-piano-mf/f6.wav";
 
 import g3 from "../assets/audio/piano/Piano.pp.G3.mp3";
 import g4 from "../assets/audio/piano/Piano.pp.G4.mp3";
@@ -158,3 +158,29 @@ export const chords = [
   {chord: "Am", notes: ["A", "C", "E"]},
   {chord: "F", notes: ["F", "A", "C", "E"]}
 ];
+
+
+export const clean_piano =
+  { "A0": "../assets/audio/vsco2-piano-mf/a0.wav",
+    "C#1": "../assets/audio/vsco2-piano-mf/csharp1.wav",
+    "F1": "../assets/audio/vsco2-piano-mf/f1.wav",
+    "C#2": "../assets/audio/vsco2-piano-mf/csharp2.wav",
+    "F2": "../assets/audio/vsco2-piano-mf/f2.wav",
+    "A2": "../assets/audio/vsco2-piano-mf/a2.wav",
+    "C#3": "../assets/audio/vsco2-piano-mf/csharp3.wav",
+    "F3": "../assets/audio/vsco2-piano-mf/f3.wav",
+    "A3": "../assets/audio/vsco2-piano-mf/a3.wav",
+    "C#4": "../assets/audio/vsco2-piano-mf/csharp4.wav",
+    "F4": "../assets/audio/vsco2-piano-mf/f4.wav",
+    "A4": "../assets/audio/vsco2-piano-mf/a4.wav",
+    "C#5": "../assets/audio/vsco2-piano-mf/csharp5.wav",
+    "F5": "../assets/audio/vsco2-piano-mf/f5.wav",
+    "A5": "../assets/audio/vsco2-piano-mf/a5.wav",
+    "C#6": "../assets/audio/vsco2-piano-mf/csharp6.wav",
+    "F6": "../assets/audio/vsco2-piano-mf/f6.wav",
+    "A6": "../assets/audio/vsco2-piano-mf/a6.wav",
+    "C#7": "../assets/audio/vsco2-piano-mf/csharp7.wav",
+    "F7": "../assets/audio/vsco2-piano-mf/f7.wav",
+    "A7": "../assets/audio/vsco2-piano-mf/a7.wav",
+    "C8": "../assets/audio/vsco2-piano-mf/c8.wav"
+  };

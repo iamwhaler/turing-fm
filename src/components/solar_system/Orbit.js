@@ -26,7 +26,8 @@ class Orbit extends React.Component {
         console.log("orbit props")
         console.log(this.props);
         return (
-            <div style={{
+            <div
+                style={{
                 position: "absolute",
                 pointerEvents: "none"
             }}>

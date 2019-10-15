@@ -1,5 +1,5 @@
 import _ from "lodash";
-import {piano_notes} from "../knowledge/piano_notes";
+import {piano_notes, clean_piano} from "../knowledge/piano_notes";
 import samples from "../knowledge/samples";
 import Tone from "tone";
 import React from "react"
@@ -112,15 +112,18 @@ export default class Helpers {
   fetchSequenceNew = (seq) => {
     let fetchedNotes = [];
     _.each(seq, item => {
-          let fetchedNote = {};
-          fetchedNote[item] = samples["vsco2-cello-spic"][1][item];
-          fetchedNotes.push();
-    });
+      console.log(clean_piano);
+    })
 
     //[{"note" : path}]
     return fetchedNotes
     //console.log(fetchedNotes);
   };
 
+  createLoop = (note, path, interval = "8n") => {
+    let callback = this.createToneSound(note, path);
+    let loop = new Tone.Loop(callback, interval).start(0);
+    Tone.Transport.scheduleRepeat(callback, "8n", "1m");
+  }
 
 }

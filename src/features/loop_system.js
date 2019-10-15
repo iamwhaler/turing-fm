@@ -1,7 +1,7 @@
 import Tone from "tone";
 
 export const createLoop = callback => {
-  var loop = new Tone.Loop(callback, "8n").toMaster().start(0);
+  return new Tone.Loop(callback, "8n").toMaster().start(0);
 };
 
 export const createArp = (gin, store, sequence, pattern) => {

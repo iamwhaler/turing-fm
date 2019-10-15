@@ -20,7 +20,7 @@ export const rules = {
       if (store.sequence.length < 4) genSequence(params.gin, store, chords);
 
       if (store.tick % 20 === 0) _.each(store.sequence, note => {
-        store.fetched_sequence = [...params.helpers.fetchSequence(note), ...store.fetched_sequence];
+        store.fetched_sequence = [...params.helpers.fetchSequenceNew(note), ...store.fetched_sequence];
       });
 
       store.fetched_sequence.forEach((item, key) => {
