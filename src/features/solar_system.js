@@ -1,9 +1,16 @@
 import _ from "lodash";
-import {instruments} from "../knowledge/instruments";
 import drum from "../assets/audio/drum.wav";
 
 export const createNewSolarSystem = (gin, store) => {
-  store.solar_systems.push({id: store.solar_systems_count, bpm: 100, orbits: [], spin: false, orbits_count: 0});
+  store.solar_systems.push({
+    id: store.solar_systems_count,
+    name: genSystemName(),
+    bpm: 100,
+    orbits: [],
+    spin: false,
+    orbits_count: 0
+  });
+
   store.selected_solar_system_id = store.solar_systems_count;
   store.solar_systems_count++;
   _.times(10, () => createEmptyOrbit(gin, store, store.solar_systems[store.selected_solar_system_id]));
@@ -17,7 +24,7 @@ export const setCurrentSolarSystem = (gin, store, id) => {
   gin.setState(store);
 };
 
-export const createNewPlanet = (gin, store) => {
+export const createNewPlanet = (gin, store, instrument) => {
   document.dispatchEvent(new Event('planet_created'));
   let orbit = _.find(store.solar_systems[store.selected_solar_system_id].orbits, orbit => orbit.empty);
   if (orbit) {
@@ -25,9 +32,9 @@ export const createNewPlanet = (gin, store) => {
     orbit.time_length = _.random(5, 15);
     orbit.planet = {
       sequence: [],
-      instrument: _.sample(instruments)
+      instrument: instrument
     };
-    gin.params.helpers.loopSound(drum);
+    //gin.params.helpers.loopSound(drum);
   } else {
     alert("Maximum amount of orbits");
   }
@@ -77,3 +84,11 @@ export const createEmptyOrbit = (gin, store, system) => {
   });
   gin.setState(store);
 };
+
+function genSystemName() {
+  let f = _.sample(['Repti', "Lepti", "Ganto", "Locky", "Roghe"]);
+  let l = _.sample(['Le', "Ne", "Me ao", "Ao", "Ok"]);
+  let m = _.sample (['Wor', 'Tof', 'Kot', "Fok", "Wot"]);
+
+  return f + ' ' + l + ' ' + m
+}
