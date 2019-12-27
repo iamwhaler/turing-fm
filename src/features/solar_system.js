@@ -1,5 +1,6 @@
 import _ from "lodash";
 import {instruments} from "../knowledge/instruments";
+import drum from "../assets/audio/drum.wav";
 
 export const createNewSolarSystem = (gin, store) => {
   store.solar_systems.push({id: store.solar_systems_count, bpm: 100, orbits: [], spin: false, orbits_count: 0});
@@ -26,6 +27,7 @@ export const createNewPlanet = (gin, store) => {
       sequence: [],
       instrument: _.sample(instruments)
     };
+    gin.params.helpers.loopSound(drum);
   } else {
     alert("Maximum amount of orbits");
   }

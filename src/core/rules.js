@@ -1,15 +1,16 @@
 import _ from "lodash";
 import { genChordProgression, genSequence } from "../features/progressions_algorhythm";
 import { progressions, chords } from "../knowledge/piano_notes";
+import {createSequence} from "../features/loop_system";
+import Tone from "tone";
 
 export const rules = {
   tick: {
     onTick: (store, params) => {
+      updateTime();
       _.each(store.fetched_sequence, (item, key) => {
         if (item.time === store.tick) {
-          //params.helpers.createSound(item.file);
-
-          params.helpers.createToneSound(item.note + item.octave , item.file);
+          params.helpers.createToneSound(item.note + item.octave , item.file); //params.helpers.createSound(item.file);
           store.orchestrator.current_note = key;
         }
       });
@@ -18,15 +19,20 @@ export const rules = {
 
       if (store.sequence.length < 4) genSequence(params.gin, store, chords);
 
-      if (store.tick % 20 === 0) _.each(store.sequence, note => {
+      if (store.tick % 10 === 0) _.each(store.sequence, note => {
         store.fetched_sequence = [...params.helpers.fetchSequence(note), ...store.fetched_sequence];
       });
 
       store.fetched_sequence.forEach((item, key) => {
-        item.time = _.random(store.tick, Math.floor(store.tick + key * 2));
+        item.time = _.random(store.tick, Math.floor(store.tick + key * 1.5));
       });
 
       return store;
     }
   }
 };
+
+function updateTime() {
+  console.log('time');
+  requestAnimationFrame(updateTime);
+}

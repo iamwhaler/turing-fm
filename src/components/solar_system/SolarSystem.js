@@ -19,11 +19,6 @@ class SolarSystem extends React.Component {
         let store = gin.store;
         let solar_system = this.props.solar_system;
         let container_size = 500;
-        if (!solar_system) {
-            return (<div>Choose solar system</div>)
-        }
-        let create_planet_button = <button onClick={() => createNewPlanet(gin, store)}>Create planet</button>;
-        let toggle_spin_button = <button onClick={() => spinToggle(gin, store, solar_system.id, !solar_system.spin)}>{solar_system.spin ? "Stop" : "Start"}</button>;
 
         //делаем массив с индексами орбит, отсортированных по длине орбиты
         let sorted_orbits_indexes = _.sortBy(solar_system.orbits, "time_length").filter(o => !o.empty).map((o) => {
@@ -52,8 +47,8 @@ class SolarSystem extends React.Component {
         });
         return (
             <div className="solar-system" style={{ width: container_size, height: container_size}}>
-                {create_planet_button}
-                {toggle_spin_button}
+              <button onClick={() => createNewPlanet(gin, store)}>Create planet</button>
+              <button onClick={() => spinToggle(gin, store, solar_system.id, !solar_system.spin)}>{solar_system.spin ? "Stop" : "Start"}</button>
                 <Sun container_size={container_size} r={30} bmp={solar_system.bpm}/>
                 {orbits ? orbits : ""}
             </div>

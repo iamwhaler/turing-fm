@@ -4,6 +4,21 @@ circle {
     transition: all 0.7s ease-in-out;
 }
 
+.solar-system-button {
+    width: 45%;
+    height: 64px;
+    background-color: #8b95a5;
+    margin: 0 auto;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: #B6BCC6;
+        cursor: pointer;
+    }
+}
+
 .solar-systems-manager {
     margin-top: 10px;
     display: flex;
@@ -15,7 +30,6 @@ circle {
     width: 20%;
     margin-right: 30px;
     height: 80%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
 }

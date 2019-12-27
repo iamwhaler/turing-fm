@@ -9,17 +9,13 @@ export class SolarSystemsManager extends React.Component {
     }
 
     render() {
-        let gin = this.props.gin;
-        let store = gin.store;
+        let store = this.props.gin.store;
         let current_solar_system = _.find(store.solar_systems, s => s.id === store.selected_solar_system_id);
-        console.log("render");
-        console.log("current_solar_system");
-        console.log(current_solar_system);
 
         return (
             <div className="solar-systems-manager">
-                <SolarSystemsList gin={this.props.gin} />
-                <SolarSystem gin={this.props.gin} solar_system={current_solar_system}/>
+              <SolarSystemsList gin={this.props.gin} />
+              {store.solar_systems.length > 0 ? <SolarSystem gin={this.props.gin} solar_system={current_solar_system}/> : ''}
             </div>
         )
     }

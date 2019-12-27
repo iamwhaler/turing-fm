@@ -43,10 +43,10 @@ export default class Helpers {
     })
   };
 
-  createSoundById = id => {
+  createSoundById = (id, url) => {
     soundManager.createSound({
       id: id,
-      url: '../mpc/audio/CHINA_1.mp3',
+      url: url,
       onload: () => {
 
       },
@@ -54,7 +54,18 @@ export default class Helpers {
         soundManager._writeDebug(this.id + ' finished playing');
         //soundManager.play(this.id + 1, {});
       }
-    }).load();
+    }).load().play();
+  };
+
+  loopSound = path => {
+    soundManager.createSound({
+      id: new Date(),
+      multiShotEvents: true,
+      url: path,
+      onfinish: function () {
+        soundManager._writeDebug(this.url + ' finished playing');
+      }
+    }).play({loops: 42});
   };
 
   getSoundById = id => {
