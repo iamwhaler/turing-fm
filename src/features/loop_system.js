@@ -47,5 +47,5 @@ export const createKick = () => {
   }, "4n");
 
 //play the loop between 0-2m on the transport
-  loop.start(0).stop('2m');
+  loop.start(0).stop('16m');
 }

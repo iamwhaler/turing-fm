@@ -1,6 +1,4 @@
 import React from 'react';
-import _ from "lodash";
-import {createNewPlanet} from "../../features/solar_system";
 import styled, { keyframes, css } from "styled-components";
 import PropTypes from 'prop-types';
 

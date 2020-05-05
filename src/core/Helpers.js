@@ -1,8 +1,6 @@
 import _ from "lodash";
-import {piano_notes, clean_piano} from "../knowledge/piano_notes";
-import samples from "../knowledge/samples";
+import {piano_notes} from "../knowledge/piano_notes";
 import Tone from "tone";
-import React from "react"
 import {soundManager} from "soundmanager2";
 
 const _ENDPOINT = "https://turing-fm-api.herokuapp.com/sequence";
@@ -113,22 +111,12 @@ export default class Helpers {
         .catch(e => console.error(e));
   };
 
-  fetchSequence = (seq) => {
+  fetchSequence = (seq, store) => {
     let fetchedNotes = [];
     _.each(seq, item => fetchedNotes.push(_.sample(_.filter(piano_notes, note => note.note === item))));
+    _.each(fetchedNotes, (note, key) => note.time = _.random(store.tick, Math.floor(store.tick + key * 1.6)))
+    console.log(fetchedNotes);
     return fetchedNotes
-    //console.log(fetchedNotes);
-  };
-
-  fetchSequenceNew = (seq) => {
-    let fetchedNotes = [];
-    _.each(seq, item => {
-      console.log(clean_piano);
-    })
-
-    //[{"note" : path}]
-    return fetchedNotes
-    //console.log(fetchedNotes);
   };
 
   createLoop = (note, path, interval = "8n") => {

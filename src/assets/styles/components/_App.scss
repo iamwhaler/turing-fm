@@ -28,7 +28,9 @@ canvas {
 }
 
 .paths {
-  height: 360px;
+  //height: 360px;
+  padding: 6px;
+  margin: 4px;
   overflow: scroll;
   background-color: lightsteelblue;
   border-radius: 3px;

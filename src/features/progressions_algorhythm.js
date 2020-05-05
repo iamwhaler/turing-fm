@@ -11,7 +11,7 @@ export const genChordProgression = (gin, store, base, progressions, type = "opti
 export const genSequence = (gin, store, chords, base = false) => {
   if (!base && store.progression) store.progression.forEach(key => {
     key.chords.forEach(chord => {
-      store.sequence.push(chords.filter(seq => seq.chord === chord)[0].notes)
+      store.sequence = chords.filter(seq => seq.chord === chord)[0].notes
     });
   });
   gin.setState(store);

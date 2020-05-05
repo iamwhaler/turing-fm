@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../assets/styles/main.scss';
-import { Dropdown } from "./Dropdown";
 import { getDefaultState } from "../core/default_state.js";
+import drums from "../../src/assets/audio/drum.wav";
 
 import { Gin } from "../core/Gin";
 
@@ -9,12 +9,9 @@ import Helpers from "../core/Helpers";
 import { rules } from "../core/rules";
 import Tone from "tone";
 import _ from "lodash";
-import {SolarSystemsList} from "./solar_system/SolarSystemsList";
 import {SolarSystemsManager} from "./solar_system/SolarSystemManager";
 
-import { Chord, Note, Distance } from 'tonal';
-import samples from '../knowledge/samples.json';
-import {createSequence, createKick, createLoop} from "../features/loop_system";
+import {createKick} from "../features/loop_system";
 
 class App extends Component {
   constructor(props) {
@@ -52,18 +49,7 @@ class App extends Component {
       initDone: true,
       fetched_sequence: []
     });
-      //
-      // soundManager.setup({
-      //    url: '/path/to/swf-directory/',
-      //    onready: function() {
-      //  },
-      //
-      //   ontimeout: function() {
-      //      console.log("Uh-oh. No HTML5 support, SWF missing, Flash blocked or other issue\n")
-      //  }
-      //
-      // });
-
+   
     let store = this.gin.store;
     let helpers = this.helpers;
     document.addEventListener('planet_created', function (e) {
@@ -88,7 +74,6 @@ class App extends Component {
                         <option value="graph">Graph</option>
                         <option value="chord_progression">Chord Progression</option>
                         <option value="orchestrator">Orchestrator</option>
-                        <option value="chords">Chords</option>
                       </select>
                       <div>{"Time: " + this.gin.store.frame}</div>
                       <div>{"BPM: " + this.gin.store.frame_rate * 100}</div>
@@ -100,6 +85,7 @@ class App extends Component {
                               <div>{item.note + item.octave  + " " + " t: " + item.time}</div>
                             </div>)
                       })}
+                      <button onClick={() => createKick()}>Create Kick</button>
                       </div>
 
                     </div>
@@ -114,11 +100,10 @@ class App extends Component {
     return (
       
         <div className="App">
-          <button onClick={() => createSequence()}>Create sequence</button>
-          <button onClick={() => createKick()}>Create Kick</button>
-          <button onClick={() => createLoop()}>Create Loop</button>
+          {/* <button onClick={() => createSequence()}>Create sequence</button> */}
+          {/* <button onClick={() => createLoop()}>Create Loop</button> */}
           <button onClick={() => { console.log(this.gin.store)}}>Console state</button>
-          <button onClick={() => { this.setState({ current: "prototype" })}}>Prototype</button>
+          {/* <button onClick={() => { this.setState({ current: "prototype" })}}>Prototype</button> */}
           <button onClick={() => { this.setState({ current: "solar_system" })}}>Solar system</button>
           {content}
         </div>

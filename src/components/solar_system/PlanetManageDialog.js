@@ -1,7 +1,6 @@
 import React from 'react';
-import _ from "lodash";
-import {createNewPlanet, changeOrbitParameter} from "../../features/solar_system";
-import styled, { keyframes} from "styled-components";
+import {changeOrbitParameter} from "../../features/solar_system";
+
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
@@ -38,9 +37,9 @@ class PlanetManageDialog extends React.Component {
             time_length: event.target.value
         })
     };
-    // ПРОВЕРИТЬ РАБОТОСПОСОБНОСТЬ ИЗМЕНЕНИЯ
+
     render() {
-        let { gin, store, data, open } = this.props;
+        let { data, open } = this.props;
         return (
             <Dialog
                 open={open}
